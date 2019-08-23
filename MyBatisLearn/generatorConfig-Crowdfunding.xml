@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+  <context id="context1">
+    <jdbcConnection connectionURL="jdbc:mysql://127.0.0.1:3306/crwodfunding20180921" driverClass="com.mysql.jdbc.Driver" password="hackaming" userId="root" />
+    <javaModelGenerator targetPackage="com.crowdfunding.pojo" targetProject="MyBatisLearn\src" >
+        <property name="enableSubPackages" value="false"/>
+    	<property name="trimStrings" value=" true"/>
+    </javaModelGenerator>
+    <sqlMapGenerator targetPackage="com.crowdfunding.mapper" targetProject="MyBatisLearn\src" >
+<property name="enableSubPackages" value="false"/>
+    </sqlMapGenerator>
+    
+    <javaClientGenerator targetPackage="com.crowdfunding.mapper" targetProject="MyBatisLearn\src" type="XMLMAPPER" >
+    <property name="enableSubPackages" value="false"/>
+    </javaClientGenerator>
+<table schema="" tableName="activity_info" />
+<table schema="" tableName="activity_reservation" />
+<table schema="" tableName="crowd_account " />
+<table schema="" tableName="crowd_amount" />
+<table schema="" tableName="crowd_announcement" />
+<table schema="" tableName="crowd_bankcard" />
+<table schema="" tableName="crowd_busniess" />
+<table schema="" tableName="crowd_faq" />
+<table schema="" tableName="crowd_favorer" />
+<table schema="" tableName="crowd_image" />
+<table schema="" tableName="crowd_letter" />
+<table schema="" tableName="crowd_payment" />
+<table schema="" tableName="crowd_trans_journal" />
+<table schema="" tableName="crowd_vote" />
+<table schema="" tableName="proj_info" />
+<table schema="" tableName="proj_price" />
+<table schema="" tableName="proj_reservation" />
+<table schema="" tableName="proj_tenancy" />
+<table schema="" tableName="registration_user" />
+<table schema="" tableName="t_db_issue" />
+<table schema="" tableName="t_sys_biz_seq" />
+
+  </context>
+</generatorConfiguration>
