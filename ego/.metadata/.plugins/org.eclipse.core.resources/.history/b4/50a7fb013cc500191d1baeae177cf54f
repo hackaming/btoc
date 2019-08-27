@@ -1,0 +1,578 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ include file="../common/base.jsp"%>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>中筹网金-编辑项目</title>
+<style type="text/css">
+#end_header{
+	width: 100%;
+	height: 30%;
+	font-size: 32px;
+	text-align: center;
+	vertical-align: middle;
+	background-color: red;
+}
+#end_content{
+	width: 100%;
+	font-size: 16px;
+}
+#left_menu{
+	float: left;
+	background-color: gray;
+}
+.menu_item{
+ margin: 15px;
+}
+#right_content{
+	float: left;
+}
+#end_foot{
+	width: 100%;
+	height: 10%;
+	font-size: 32px;
+	text-align: center;
+	vertical-align: middle;
+	background-color: red;
+	float: left;
+}
+</style>
+<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="js/common/ajax/ajaxfileupload.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/kindeditor4/kindeditor.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/kindeditor4/lang/zh_CN.js"></script>
+<script type="text/javascript" >
+var kindOptions = {
+		resizeType : 1,
+	    allowPreviewEmoticons : false,
+
+	    allowMediaUpload : false,
+	    allowFileUpload : false,
+	    allowFlashUpload : false,
+
+	    allowFileManager : false,
+	    allowImageRemote : false,
+	    filePostName : "image_file",
+	    minWidth : "540",
+	    minHeight : "500",
+	    uploadJson : "${ctx}/imgUpload",
+	    items : [ 'formatblock', '|', 'image', 'link', 'removeformat' ]
+	};
+
+	KindEditor.ready(function(K) {
+	    window.editor = K.create('#projContent', kindOptions);
+	    window.editor = K.create('#developerContent', kindOptions);
+	    window.editor = K.create('#thirdInstitutionContent', kindOptions);
+	    window.editor = K.create('#projImage', kindOptions);
+	    window.editor = K.create('#projPreImage', kindOptions);
+	});
+
+function search() {
+	$.ajax({
+		url: "${ctx}/getProjectList",
+		type: "POST",
+		data: "number="+$("#projNumber").val(),
+		dataType: "json",
+		async: false,
+		success: function (data, status) {
+			var projectList = data.projectList;
+			
+			//清空表格
+			$("#tbody").html("");
+			
+			//遍历数组
+            for(var i=0; i<projectList.length; i++){
+            	$("#tbody").append("<tr><td><input type='radio' name='chkList' value='" + projectList[i].uuid + "' /></td><td>" + projectList[i].projName +"</td><td>" + projectList[i].proNumber + "</td><td>" + projectList[i].crowAmount + "</td><td>"
+            			+ projectList[i].originalAmount + "</td><td>" + projectList[i].crowNumber + "</td><td>" + projectList[i].crowDataline + "</td><td>" + projectList[i].datalineDate 
+            			+ "</td><td>" + projectList[i].projDeveloper + "</td><td>" + projectList[i].openDate + "</td><td>" + projectList[i].payDate + "</td><td>" + projectList[i].projProceeds + "</td><td>" + projectList[i].crowRealNumber 
+            			+ "</td><td>" + projectList[i].projStatus + "</td><td>" + projectList[i].cancel + "</td></tr>");
+            }
+		},
+		error: function (data, status, e) {
+			alert("查询项目失败。");
+		}
+	});
+}
+
+$(document).ready(function(){
+	var form = document.getElementById("form");
+	form.style.visibility = "hidden";
+	
+	$("#editProject").click(function(){
+		$.ajax({
+			url: "${ctx}/editProject",
+			type: "POST",
+			dataType: "json",
+			async: false,
+			success: function (data, status) {
+				
+			},
+			error: function (data, status, e) {
+				
+			}
+		});
+	});
+	$("#manageUser").click(function(){
+		$("#right_content").load("jsp/management/manageUser.jsp");
+	});
+	$("#uploadFile").click(function(){
+		$("#right_content").load("jsp/management/uploadFile.jsp");
+	});
+	$("#reserveProject").click(function(){
+		$("#right_content").load("jsp/management/reserveProject.jsp");
+	});
+	$("#uploadVideo").click(function(){
+		$("#right_content").load("jsp/management/uploadVideo.jsp");
+	});
+	$("#manageAuth").click(function(){
+		$("#right_content").load("jsp/management/manageAuth.jsp");
+	});
+	
+	
+	$("#search").click(function(){
+		search();
+	});
+	
+	$("#countdown").click(function(){
+		var val=$('input:radio[name="chkList"]:checked').val().trim();
+		if(val == null) {
+			alert("什么也没选中。");
+		} else {
+			$.ajax({
+				url: "${ctx}/countdown",
+				type: "POST",
+				data: "uuid="+$('input:radio:checked').val(),
+				dataType: "json",
+				async: false,
+				success: function (data, status) {
+					alert("倒计时成功。");
+					search();
+				},
+				error: function (data, status, e) {
+					alert("倒计时失败。");
+				}
+			});
+		}
+	});
+	$("#crowdfunding").click(function(){
+		var val=$('input:radio[name="chkList"]:checked').val().trim();
+		if(val == null) {
+			alert("什么也没选中。");
+		} else {
+			$.ajax({
+				url: "${ctx}/crowdfunding",
+				type: "POST",
+				data: "uuid="+$('input:radio:checked').val(),
+				dataType: "json",
+				async: false,
+				success: function (data, status) {
+					alert("众筹成功。");
+					search();
+				},
+				error: function (data, status, e) {
+					alert("众筹失败。");
+				}
+			});
+		}
+	});
+	$("#assignment").click(function(){
+		var val=$('input:radio[name="chkList"]:checked').val().trim();
+		if(val == null) {
+			alert("什么也没选中。");
+		} else {
+			$.ajax({
+				url: "${ctx}/assignment",
+				type: "POST",
+				data: "uuid="+$('input:radio:checked').val(),
+				dataType: "json",
+				async: false,
+				success: function (data, status) {
+					alert("转让成功。");
+					search();
+				},
+				error: function (data, status, e) {
+					alert("转让失败。");
+				}
+			});
+		}
+	});
+	$("#operation").click(function(){
+		var val=$('input:radio[name="chkList"]:checked').val().trim();
+		if(val == null) {
+			alert("什么也没选中。");
+		} else {
+			$.ajax({
+				url: "${ctx}/operation",
+				type: "POST",
+				data: "uuid="+$('input:radio:checked').val(),
+				dataType: "json",
+				async: false,
+				success: function (data, status) {
+					alert("运营成功。");
+					search();
+				},
+				error: function (data, status, e) {
+					alert("运营失败。");
+				}
+			});
+		}
+	});
+	$("#vote").click(function(){
+		var val=$('input:radio[name="chkList"]:checked').val().trim();
+		if(val == null) {
+			alert("什么也没选中。");
+		} else {
+			$.ajax({
+				url: "${ctx}/vote",
+				type: "POST",
+				data: "uuid="+$('input:radio:checked').val(),
+				dataType: "json",
+				async: false,
+				success: function (data, status) {
+					alert("投票成功。");
+					search();
+				},
+				error: function (data, status, e) {
+					alert("投票失败。");
+				}
+			});
+		}
+	});
+	$("#audit").click(function(){
+		var val=$('input:radio[name="chkList"]:checked').val().trim();
+		if(val == null) {
+			alert("什么也没选中。");
+		} else {
+			$.ajax({
+				url: "${ctx}/audit",
+				type: "POST",
+				data: "uuid="+$('input:radio:checked').val(),
+				dataType: "json",
+				async: false,
+				success: function (data, status) {
+					alert("审核成功。");
+					search();
+				},
+				error: function (data, status, e) {
+					alert("审核失败。");
+				}
+			});
+		}
+	});
+	$("#publish").click(function(){
+		var val=$('input:radio[name="chkList"]:checked').val().trim();
+		if(val == null) {
+			alert("什么也没选中。");
+		} else {
+			$.ajax({
+				url: "${ctx}/publish",
+				type: "POST",
+				data: "uuid="+$('input:radio:checked').val(),
+				dataType: "json",
+				async: false,
+				success: function (data, status) {
+					alert("发布成功。");
+					search();
+				},
+				error: function (data, status, e) {
+					alert("发布失败。");
+				}
+			});
+		}
+	});
+	$("#update").click(function(){
+		var val=$('input:radio[name="chkList"]:checked').val().trim();
+		if(val == null) {
+			alert("什么也没选中。");
+		} else {
+			$.ajax({
+				url: "${ctx}/queryProjectByUuid",
+				type: "POST",
+				data: "uuid="+$('input:radio:checked').val(),
+				dataType: "json",
+				async: false,
+				success: function (data, status) {
+					$("#uuid").val(data.project.uuid);
+					$("#projName").val(data.project.projName);
+					$("#proNumber").val(data.project.proNumber);
+					$("#crowAmount").val(data.project.crowAmount);
+					$("#haveCrowAmt").val(data.project.haveCrowAmt);
+					$("#originalAmount").val(data.project.originalAmount);
+					$("#crowNumber").val(data.project.crowNumber);
+					$("#crowDataline").val(data.project.crowDataline);
+					$("#crowSmallest").val(data.project.crowSmallest);
+					$("#datalineDate").val(data.project.datalineDate);
+					$("#type").val(data.project.type);
+					$("#bugdet").val(data.project.bugdet);
+					$("#projArea").val(data.project.projArea);
+					$("#projPrices").val(data.project.projPrices);
+					$("#projDeveloper").val(data.project.projDeveloper);
+					$("#projAddress").val(data.project.projAddress);
+					$("#projDecorate").val(data.project.projDecorate);
+					$("#projProperty").val(data.project.projProperty);
+					$("#openDate").val(data.project.openDate);
+					$("#projCreatedate").val(data.project.projCreatedate);
+					$("#projType").val(data.project.projType);
+					$("#islease").val(data.project.islease);
+					$("#payDate").val(data.project.payDate);
+					$("#projProceeds").val(data.project.projProceeds);
+					$("#comments").val(data.project.comments);
+					$("#projTitle").val(data.project.projTitle);
+					$("#createDate").val(data.project.createDate);
+					$("#projContent").val(data.project.projContent);
+					$("#developerContent").val(data.project.developerContent);
+					$("#crowRealNumber").val(data.project.crowRealNumber);					
+					$("#projImage").val(data.project.projImageUrl);
+					$("#projPreImage").val(data.project.projPreImageUrl);
+					$("#thirdInstitutionContent").val(data.project.thirdInstitutionContent);
+					
+					/* KindEditor.sync($("#projContent"));
+					$("#projContent").val(KindEditor.escape(data.project.projContent));
+					KindEditor.sync($("#developerContent"));
+					$("#developerContent").val(KindEditor.escape(data.project.developerContent));
+					KindEditor.sync($("#thirdInstitutionContent"));
+					$("#thirdInstitutionContent").val(KindEditor.escape(data.project.projImageUrl));
+					KindEditor.sync($("#projImage"));
+					$("#projImage").val(KindEditor.escape(data.project.projPreImageUrl));
+					KindEditor.sync($("#projPreImage"));
+					$("#projPreImage").val(KindEditor.escape(data.project.thirdInstitutionContent)); */
+					
+					var list = document.getElementById("list");
+					var form = document.getElementById("form"); 
+					list.style.visibility = "hidden";
+					form.style.visibility = "visible";
+				},
+				error: function (data, status, e) {
+					alert("加载项目失败。");
+				}
+			});
+		}
+	});
+	$("#del").click(function(){
+		var val=$('input:radio[name="chkList"]:checked').val().trim();
+		if(val == null) {
+			alert("什么也没选中。");
+		} else {
+			$.ajax({
+				url: "${ctx}/delProject",
+				type: "POST",
+				data: "uuid="+$('input:radio:checked').val(),
+				dataType: "json",
+				async: false,
+				success: function (data, status) {
+					alert("删除项目成功。");
+					search();
+				},
+				error: function (data, status, e) {
+					alert("删除项目失败。");
+				}
+			});
+		}
+	});
+	$("#add").click(function(){
+		$("#uuid").val("");
+		$("#projName").val("");
+		$("#proNumber").val("");
+		$("#crowAmount").val("");
+		$("#haveCrowAmt").val("");
+		$("#originalAmount").val("");
+		$("#crowNumber").val("");
+		$("#crowDataline").val("");
+		$("#crowSmallest").val("");
+		$("#datalineDate").val("");
+		$("#type").val("");
+		$("#bugdet").val("");
+		$("#projArea").val("");
+		$("#projPrices").val("");
+		$("#projDeveloper").val("");
+		$("#projAddress").val("");
+		$("#projDecorate").val("");
+		$("#projProperty").val("");
+		$("#openDate").val("");
+		$("#projCreatedate").val("");
+		$("#projType").val("");
+		$("#islease").val("");
+		$("#payDate").val("");
+		$("#projProceeds").val("");
+		$("#comments").val("");
+		$("#projTitle").val("");
+		$("#createDate").val("");
+		//$("#projContent").val("");
+		//$("#developerContent").val("");
+		$("#crowRealNumber").val("");
+		//$("#projImage").val("");
+		//$("#projPreImage").val("");
+		//$("#thirdInstitutionContent").val("");
+		
+		KindEditor.sync($("#projContent"));
+		$("#projContent").val(KindEditor.escape(""));
+		KindEditor.sync($("#developerContent"));
+		$("#developerContent").val(KindEditor.escape(""));
+		KindEditor.sync($("#thirdInstitutionContent"));
+		$("#thirdInstitutionContent").val(KindEditor.escape(""));
+		KindEditor.sync($("#projImage"));
+		$("#projImage").val(KindEditor.escape(""));
+		KindEditor.sync($("#projPreImage"));
+		$("#projPreImage").val(KindEditor.escape(""));
+		
+		
+		var list = document.getElementById("list"); 
+		var form = document.getElementById("form"); 
+		list.style.visibility = "hidden";
+		form.style.visibility = "visible";
+	});
+	$("#cancel").click(function(){
+		var list = document.getElementById("list"); 
+		var form = document.getElementById("form"); 
+		list.style.visibility = "visible";
+		form.style.visibility = "hidden";
+	});
+	$("#save").click(function() {
+		KindEditor.sync($("#projContent"));
+		$("#projContent").val(KindEditor.escape($("#projContent").val()));
+		KindEditor.sync($("#developerContent"));
+		$("#developerContent").val(KindEditor.escape($("#developerContent").val()));
+		KindEditor.sync($("#thirdInstitutionContent"));
+		$("#thirdInstitutionContent").val(KindEditor.escape($("#thirdInstitutionContent").val()));
+		KindEditor.sync($("#projImage"));
+		$("#projImage").val(KindEditor.escape($("#projImage").val()));
+		KindEditor.sync($("#projPreImage"));
+		$("#projPreImage").val(KindEditor.escape($("#projPreImage").val()));
+		$.ajax({
+			url: "saveProject",
+			type: "POST",
+			data: {"uuid":$("#uuid").val(),"projName":$("#projName").val(),"proNumber":$("#proNumber").val(),"crowAmount":$("#crowAmount").val(),"haveCrowAmt":$("#haveCrowAmt").val(),"originalAmount":$("#originalAmount").val(),"crowNumber":$("#crowNumber").val(),"crowDataline":$("#crowDataline").val(),"crowSmallest":$("#crowSmallest").val(),"datalineDate":$("#datalineDate").val(),"type":$("#type").val(),"bugdet":$("#bugdet").val(),"projArea":$("#projArea").val(),"projPrices":$("#projPrices").val(),"projDeveloper":$("#projDeveloper").val(),"projAddress":$("#projAddress").val(),"projDecorate":$("#projDecorate").val(),"projProperty":$("#projProperty").val(),"openDate":$("#openDate").val(),"projCreatedate":$("#projCreatedate").val(),"projType":$("#projType").val(),"islease":$("#islease").val(),"payDate":$("#payDate").val(),"projProceeds":$("#projProceeds").val(),"comments":$("#comments").val(),"projTitle":$("#projTitle").val(),"createDate":$("#createDate").val(),"projContent":$("#projContent").val(),"developerContent":$("#developerContent").val(),"crowRealNumber":$("#crowRealNumber").val(),"projImage":$("#projImage").val(),"projPreImage":$("#projPreImage").val(),"thirdInstitutionContent":$("#thirdInstitutionContent").val()},
+			dataType: "json",
+			aysnc: false,
+			success: function (data, status) {
+				alert("保存项目成功。");
+				search();
+			},
+			error: function (data, status, e) {
+				alert("保存项目失败。");
+			}
+		});
+	});
+});
+</script>
+</head>
+<body>
+<div id="wrap">
+  <div id="end_header">
+  	中筹网金后台管理系统
+  </div>
+  <div id="end_content">
+    <div id="left_menu">
+    	<div class="menu_item" id="editProject"><a href="/editProject">编辑项目</a></div>
+    	<div class="menu_item" id="manageUser"><a href="#">用户管理</a></div>
+    	<div class="menu_item" id="uploadFile"><a href="#">文件上传</a></div>
+    	<div class="menu_item" id="reserveProject"><a href="#">预约项目</a></div>
+    	<!-- <div class="menu_item" id="uploadVideo">视频上传</div>
+    	<div class="menu_item" id="manageAuth">权限管理</div> -->
+    </div>
+    <div id="right_content">
+    	<div>
+  	项目编号：<input type="text" id="projNumber" />
+  	<input type="button" id="search" value="查询"/>
+  	<input type="button" id="add" value="新增"/>
+  	<input type="button" id="update" value="更新"/>
+  	<input type="button" id="del" value="删除"/>
+  	<input type="button" id="countdown" value="倒计时"/>
+  	<input type="button" id="crowdfunding" value="众筹"/>
+  	<input type="button" id="assignment" value="转让"/>
+  	<input type="button" id="operation" value="运营"/>
+  	<input type="button" id="vote" value="投票"/>
+  	<!-- <input type="button" id="audit" value="审核"/> -->
+  	<input type="button" id="publish" value="发布"/>
+  </div>
+  <div id="list">
+  	<table border="1">
+  		<thead>
+  			<tr>
+  				<th></th>
+  				<th>项目名称</th>
+  				<th>项目编号</th>
+  				<th>众筹金额</th>
+  				<th>原价</th>
+  				<th>众筹份数</th>
+  				<th>期限</th>
+  				<th>到期日期</th>
+  				<th>开发商</th>
+  				<th>开盘时间</th>
+  				<th>交房时间</th>
+  				<th>收益率</th>
+  				<th>众筹实际份数</th>
+  				<th>项目状态</th>
+  				<th>状态</th>
+  			</tr>
+  		</thead>
+  		<tbody id="tbody">
+  			
+  		</tbody>
+  	</table>
+  </div>
+  <div id="form">
+  	项目名称:<input type="text" id="projName" /><br />
+  	项目编号:<input type="text" id="proNumber" />(P+年度+4位顺序码)<br />
+  	众筹目标金额:<input type="text" id="crowAmount" /><br />
+  	已募集金额:<input type="text" id="haveCrowAmt" /><br />
+  	原价:<input type="text" id="originalAmount" /><br />
+  	众筹份数:<input type="text" id="crowNumber" /><br />
+  	期限:<input type="text" id="crowDataline" /><br />
+  	众筹最小单位:<input type="text" id="crowSmallest" /><br />
+  	到期日期:<input type="text" id="datalineDate" /><br />
+  	业务类型:<input type="text" id="type" /><br />
+  	税费预算:<input type="text" id="bugdet" /><br />
+  	不动产面积:<input type="text" id="projArea" /><br />
+  	不动产单价:<input type="text" id="projPrices" /><br />
+  	开发商:<input type="text" id="projDeveloper" /><br />
+  	物业地址:<input type="text" id="projAddress" /><br />
+  	装修状况:<input type="text" id="projDecorate" /><br />
+  	物业类别:<input type="text" id="projProperty" /><br />
+  	开盘时间:<input type="text" id="openDate" /><br />
+  	不动产建造时间:<input type="text" id="projCreatedate" /><br />
+  	产权类型:<input type="text" id="projType" /><br />
+  	是否有租约:<input type="text" id="islease" /><br />
+  	交房时间:<input type="text" id="payDate" /><br />
+  	收益率:<input type="text" id="projProceeds" /><br />
+  	备注:<input type="text" id="comments" /><br />
+  	项目副标题:<input type="text" id="projTitle" /><br />
+  	创建时间:<input type="text" id="createDate" /><br />
+  	项目内容:
+  	<textarea id="projContent" name="projContent" style="width: 100px; height: 500px;">
+    	&lt;h2&gt;项目内容图片&lt;/h2&gt;
+        &lt;p&gt;项目内容正文&lt;/p&gt;
+    </textarea><br />
+  	开发商内容:
+  	<textarea id="developerContent" name="developerContent" style="width: 100px; height: 500px;">
+    	&lt;h2&gt;开发商内容图片&lt;/h2&gt;
+        &lt;p&gt;开发商内容正文&lt;/p&gt;
+    </textarea><br />
+  	众筹实际份数:<input type="text" id="crowRealNumber" /><br />
+  	项目图片:
+  	<textarea id="projImage" name="projImage" style="width: 100px; height: 500px;">
+    </textarea><br />
+  	项目预图片:
+  	<textarea id="projPreImage" name="projPreImage" style="width: 100px; height: 500px;">
+    </textarea><br />
+  	第三方机构简介:
+  	<textarea id="thirdInstitutionContent" name="thirdInstitutionContent" style="width: 100px; height: 500px;">
+    	&lt;h2&gt;第三方机构图片&lt;/h2&gt;
+        &lt;p&gt;第三方机构正文&lt;/p&gt;
+    </textarea><br />
+  	<input type="hidden" id="uuid" />
+  	<input type="button" id="save" value="保存" />
+  	<input type="button" id="cancel" value="取消" />
+  </div>
+    </div>
+  </div>
+  <div id="end_foot">
+  	中筹金融互联网公司
+  </div>
+</div>
+</body>
+</html>

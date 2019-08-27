@@ -1,0 +1,309 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>合信生利</title>
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/xxk.js"></script>
+</head>
+<body>
+<div id="wrap">
+  <div id="header">
+    <div class="money">
+      <h2>累计融资金额:</h2>
+      <p>32,400,000</p>
+    </div>
+    <div class="wx">
+      <p>合信生利微信</p>
+    </div>
+    <div class="menu"> <a href="#"><img src="images/index_52.jpg" width="91" height="47" /></a><a href="#"><img src="images/index_53.jpg" width="109" height="47" /></a><a href="#"><img src="images/index_54.jpg" width="92" height="47" /></a><a href="#"><img src="images/index_55.jpg" width="96" height="47" /></a><a href="#"><img src="images/index_56.jpg" width="132" height="47" /></a><a href="#"><img src="images/index_57.jpg" width="97" height="47" /></a></div>
+    <div class="login"><a href="#" class="red">>登录</a><a href="#" class="red">>注册</a><a href="#" class="red">>企业入口</a></div>
+  </div>
+  <div id="content">
+    <div class="answer">
+      <div class="search">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="20"></td>
+            <td width="120"><h2>您的问题</h2></td>
+            <td width="225" valign="middle"><input name="" type="text" /></td>
+            <td width="85" valign="middle"><img src="images/main_06.jpg" width="75" height="27" /></td>
+            <td width="102" valign="middle"><img src="images/main_05.jpg" width="102" height="27" /></td>
+            <td align="right" valign="middle"><h3>常见问题：</h3></td>
+            <td valign="middle"><p>不良贷款继续扩大 银行有哪些方式处置坏账</p></td>
+          </tr>
+        </table>
+      </div>
+      <div class="lef fl">
+        <div id="Tab2">
+          <div class="Menubox2">
+            <ul>
+              <li id="two1" onmouseover="setTab('two',1,4)"  class="hover">投资回报</li>
+              <li id="two2" onmouseover="setTab('two',2,4)">投资流程</li>
+              <li id="two3" onmouseover="setTab('two',3,4)">合信生利</li>
+              <li id="two4" onmouseover="setTab('two',4,4)">安全性</li>
+            </ul>
+          </div>
+          <div class="Contentbox2">
+            <div id="con_two_1" class="hover">
+              <ul>
+                <li>
+                  <h4>投资合信生力是否保本？</h4>
+                  <p>已解决</p>
+                </li>
+                <li>
+                  <h4>一般平均每次投资能有多少收益？</h4>
+                  <p>已解决</p>
+                </li>
+                <li>
+                  <h4>投资合信生力是否保本？</h4>
+                  <p>已解决</p>
+                </li>
+                <li>
+                  <h4>一般平均每次投资能有多少收益？</h4>
+                  <p>已解决</p>
+                </li>
+                <li>
+                  <h4>投资合信生力是否保本？</h4>
+                  <p>已解决</p>
+                </li>
+                <li>
+                  <h4>一般平均每次投资能有多少收益？</h4>
+                  <p>已解决</p>
+                </li>
+                <li>
+                  <h4>投资合信生力是否保本？</h4>
+                  <p>已解决</p>
+                </li>
+                <li>
+                  <h4>一般平均每次投资能有多少收益？</h4>
+                  <p>已解决</p>
+                </li>
+              </ul>
+            </div>
+            <div id="con_two_2" style="display:none">
+              <ul>
+                <li>
+                  <h4>一般平均每次投资能有多少收益？</h4>
+                  <p>已解决</p>
+                </li>
+                <li>
+                  <h4>投资合信生力是否保本？</h4>
+                  <p>已解决</p>
+                </li>
+                <li>
+                  <h4>一般平均每次投资能有多少收益？</h4>
+                  <p>已解决</p>
+                </li>
+                <li>
+                  <h4>投资合信生力是否保本？</h4>
+                  <p>已解决</p>
+                </li>
+                <li>
+                  <h4>一般平均每次投资能有多少收益？</h4>
+                  <p>已解决</p>
+                </li>
+                <li>
+                  <h4>投资合信生力是否保本？</h4>
+                  <p>已解决</p>
+                </li>
+                <li>
+                  <h4>投资合信生力是否保本？</h4>
+                  <p>已解决</p>
+                </li>
+                <li>
+                  <h4>一般平均每次投资能有多少收益？</h4>
+                  <p>已解决</p>
+                </li>
+              </ul>
+            </div>
+            <div id="con_two_3" style="display:none">
+              <ul>
+                <li>
+                  <h4>投资合信生力是否保本？</h4>
+                  <p>已解决</p>
+                </li>
+                <li>
+                  <h4>一般平均每次投资能有多少收益？</h4>
+                  <p>已解决</p>
+                </li>
+                <li>
+                  <h4>投资合信生力是否保本？</h4>
+                  <p>已解决</p>
+                </li>
+                <li>
+                  <h4>一般平均每次投资能有多少收益？</h4>
+                  <p>已解决</p>
+                </li>
+                <li>
+                  <h4>投资合信生力是否保本？</h4>
+                  <p>已解决</p>
+                </li>
+                <li>
+                  <h4>一般平均每次投资能有多少收益？</h4>
+                  <p>已解决</p>
+                </li>
+                <li>
+                  <h4>投资合信生力是否保本？</h4>
+                  <p>已解决</p>
+                </li>
+                <li>
+                  <h4>一般平均每次投资能有多少收益？</h4>
+                  <p>已解决</p>
+                </li>
+              </ul>
+            </div>
+            <div id="con_two_4" style="display:none">
+              <ul>
+                <li>
+                  <h4>投资合信生力是否保本？</h4>
+                  <p>已解决</p>
+                </li>
+                <li>
+                  <h4>一般平均每次投资能有多少收益？</h4>
+                  <p>已解决</p>
+                </li>
+                <li>
+                  <h4>投资合信生力是否保本？</h4>
+                  <p>已解决</p>
+                </li>
+                <li>
+                  <h4>一般平均每次投资能有多少收益？</h4>
+                  <p>已解决</p>
+                </li>
+                <li>
+                  <h4>投资合信生力是否保本？</h4>
+                  <p>已解决</p>
+                </li>
+                <li>
+                  <h4>一般平均每次投资能有多少收益？</h4>
+                  <p>已解决</p>
+                </li>
+                <li>
+                  <h4>投资合信生力是否保本？</h4>
+                  <p>已解决</p>
+                </li>
+                <li>
+                  <h4>一般平均每次投资能有多少收益？</h4>
+                  <p>已解决</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <h3>大家都在问</h3>
+          <div class="Contentbox2">
+            <ul>
+              <li>
+                <h4>投资合信生力是否保本？</h4>
+                <p>已解决</p>
+              </li>
+              <li>
+                <h4>一般平均每次投资能有多少收益？</h4>
+                <p>已解决</p>
+              </li>
+              <li>
+                <h4>投资合信生力是否保本？</h4>
+                <p>已解决</p>
+              </li>
+              <li>
+                <h4>一般平均每次投资能有多少收益？</h4>
+                <p>已解决</p>
+              </li>
+              <li>
+                <h4>投资合信生力是否保本？</h4>
+                <p>已解决</p>
+              </li>
+              <li>
+                <h4>一般平均每次投资能有多少收益？</h4>
+                <p>已解决</p>
+              </li>
+              <li>
+                <h4>投资合信生力是否保本？</h4>
+                <p>已解决</p>
+              </li>
+              <li>
+                <h4>一般平均每次投资能有多少收益？</h4>
+                <p>已解决</p>
+              </li>
+              <li>
+                <h4>一般平均每次投资能有多少收益？</h4>
+                <p>已解决</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="rig fr">
+        <div class="box classify">
+          <h3>问题分类</h3>
+          <div>
+            <h4>投资常识</h4>
+            <ul>
+              <li>常用知识</li>
+              <li>转让份额</li>
+              <li>投资期限</li>
+            </ul>
+            <h4>投资回报</h4>
+            <ul>
+              <li>预估收益</li>
+              <li>回报方式</li>
+              <li>升值空间</li>
+            </ul>
+            <h4>投资流程</h4>
+            <ul>
+              <li>投资问题</li>
+              <li>注册问题</li>
+            </ul>
+          </div>
+        </div>
+        <div class="banner1"><img src="images/main_03.jpg" width="244" height="206" /></div>
+        <div class="box information">
+          <h3>房地产资讯</h3>
+          <ul>
+            <li>五里桥地块问鼎上海最贵宅地</li>
+            <li>二手楼市卖方平均让价6% </li>
+            <li>别傻别天真了，真以为降价了</li>
+            <li>二手楼市卖方平均让价6% </li>
+            <li>五里桥地块问鼎上海最贵宅地</li>
+            <li>二手楼市卖方平均让价6% </li>
+            <li>别傻别天真了，真以为降价了</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div class="link">
+      <div class="fd">
+        <ul>
+          <li><a href="#">公司介绍</a></li>
+          <li><a href="#">合信生利</a></li>
+          <li><a href="#">媒体报道</a></li>
+          <li><a href="#">团队介绍</a></li>
+          <li><a href="#">投资计算器</a></li>
+          <li><a href="#">招贤纳士</a></li>
+          <li><a href="#">联系我们</a></li>
+        </ul>
+        <ul>
+          <li class="khfw"><a href="#">客户服务</a></li>
+          <li class="gfwx"><a href="#">官方微信</a></li>
+          <li class="gfwb"><a href="#">官方微博</a></li>
+        </ul>
+      </div>
+      <div class="tel">
+        <h2>客服电话</h2>
+        <h3>4001234567</h3>
+        <b>9:00-21:00</b> </div>
+    </div>
+    <p>© 2014 合信生利 All rights reserved    合信生利信息科技有限公司   沪ICP证 145663号</p>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ include file="../common/base.jsp"%>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>合信生利 - 添加项目</title>
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/xxk.js"></script>
+<script type="text/javascript" src="${ctx}/js/jquery-2.0.3.min.js?ver=1"></script>
+<script type="text/javascript" src="${ctx}/js/ajaxfileupload.js?ver=1"></script>
+<script type="text/javascript" src="${ctx}/js/project/addProject.js?ver=1"></script>
+</head>
+<body>
+	<div id="wrap">
+		<c:import url="/header" charEncoding="UTF-8" />
+		<div id="content">
+			<div class="investList">
+				<h4>添加项目</h4>
+				<div style="margin: 30px 30px 30px 30px;">
+					<form:form id="projectInfoForm" modelAttribute="projectInfo" action="${ctx}/saveProject" method="post" enctype="multipart/form-data">
+					<div>
+						<label>项目名称：</label>
+						<form:input path="projName" />
+					</div>
+					<div>
+						<label>项目编号：</label>
+						<form:input path="proNumber" />
+					</div>
+					<div>
+						<label>众筹金额：</label>
+						<form:input path="crowAmount" />
+					</div>
+					<div>
+						<label>原价：</label>
+						<form:input path="originalAmount" />
+					</div>
+					<div>
+						<label>众筹份数：</label>
+						<form:input path="crowNumber" />
+					</div>
+					<div>
+						<label>期限：</label>
+						<form:input path="crowDataline" />
+					</div>
+					<div>
+						<label>众筹最小单位：</label>
+						<form:input path="crowSmallest" />
+					</div>
+					<div>
+						<label>到期日期：</label>
+						<form:input path="datalineDate" />
+					</div>
+					<div>
+						<label>业务类型：</label>
+						<form:input path="type" />
+					</div>
+					<div>
+						<label>注销标记：</label>
+						<form:input path="cancel" />
+					</div>
+					<div>
+						<label>税费预算：</label>
+						<form:input path="bugdet" />
+					</div>
+					<div>
+						<label>不动产面积：</label>
+						<form:input path="projArea" />
+					</div>
+					<div>
+						<label>不动产单价：</label>
+						<form:input path="projPrices" />
+					</div>
+					<div>
+						<label>开发商：</label>
+						<form:input path="projDeveloper" />
+					</div>
+					<div>
+						<label>物业地址：</label>
+						<form:input path="projAddress" />
+					</div>
+					<div>
+						<label>装修状况：</label>
+						<form:input path="projDecorate" />
+					</div>
+					<div>
+						<label>物业类别：</label>
+						<form:input path="projProperty" />
+					</div>
+					<div>
+						<label>开盘时间：</label>
+						<form:input path="openDate" />
+					</div>
+					<div>
+						<label>不动产建造时间：</label>
+						<form:input path="projCreatedate" />
+					</div>
+					<div>
+						<label>产权类型：</label>
+						<form:input path="projType" />
+					</div>
+					<div>
+						<label>是否有租约：</label>
+						<form:input path="islease" />
+					</div>
+					<div>
+						<label>公司名称：</label>
+						<form:input path="companyName" />
+					</div>
+					<div>
+						<label>地址：</label>
+						<form:input path="companyAddress" />
+					</div>
+					<div>
+						<label>电话：</label>
+						<form:input path="companyPhone" />
+					</div>
+					<div>
+						<label>法人：</label>
+						<form:input path="companyPerson" />
+					</div>
+					<div>
+						<label>注册资金：</label>
+						<form:input path="registeredCapital" />
+					</div>
+					<div>
+						<label>营业执照号：</label>
+						<form:input path="businessCode" />
+					</div>
+					<div>
+						<label>经营范围：</label>
+						<form:input path="businessRange" />
+					</div>
+					<div>
+						<label>项目开户行：</label>
+						<form:input path="projBankname" />
+					</div>
+					<div>
+						<label>监管机构：</label>
+						<form:input path="superviseUnit" />
+					</div>
+					<div>
+						<label>担保机构：</label>
+						<form:input path="guaranteeUnit" />
+					</div>
+					<div>
+						<label>资质图片：</label>
+						<form:input path="qualificaitonImage" />
+					</div>
+					<div>
+						<label>交房时间：</label>
+						<form:input path="payDate" />
+					</div>
+					<div>
+						<label>收益率：</label>
+						<form:input path="projProceeds" />
+					</div>
+					<div>
+						<label>项目状态：</label>
+						<form:input path="projStatus" />
+					</div>
+					<div>
+						<label>备注：</label>
+						<form:input path="comments" />
+					</div>
+					<div>
+						<label>项目副标题：</label>
+						<form:input path="projTitle" />
+					</div>
+					<%-- <div>
+						<label>众筹实际份数：</label>
+						<form:input path="crowRealNumber" />
+					</div>
+					<div>
+						<label>项目图片名称：</label>
+						<form:input path="proj_image_name" />
+					</div>
+					<div>
+						<label>项目图片路径：</label>
+						<form:input path="proj_image_url" />
+					</div> --%>
+					<div id="save_project">保存</div>
+					</form:form>
+				</div>
+				<div id="Tab6">
+					
+					<div class="Contentbox6">
+						<div id="con_six_1" style="display: none"></div>
+						<div id="con_six_2" style="display: none"></div>
+						<div id="con_six_3" style="display: none"></div>
+						<div id="con_six_4" style="display: none"></div>
+						<div id="con_six_5" style="display: none"></div>
+						<div id="con_six_6" style="display: none"></div>
+						<div id="con_six_7" style="display: none"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<c:import url="/footer" charEncoding="UTF-8" />
+	</div>
+</body>
+</html>

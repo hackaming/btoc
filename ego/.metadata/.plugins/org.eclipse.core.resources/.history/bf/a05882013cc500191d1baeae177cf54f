@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>合信生利</title>
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/xxk.js"></script>
+</head>
+<body>
+<div id="wrap">
+  <div id="header">
+    <div class="money">
+      <h2>累计融资金额:</h2>
+      <p>32,400,000</p>
+    </div>
+    <div class="wx">
+      <p>合信生利微信</p>
+    </div>
+    <div class="menu"> <a href="#"><img src="images/index_52.jpg" width="91" height="47" /></a><a href="#"><img src="images/index_53.jpg" width="109" height="47" /></a><a href="#"><img src="images/index_54.jpg" width="92" height="47" /></a><a href="#"><img src="images/index_55.jpg" width="96" height="47" /></a><a href="#"><img src="images/index_56.jpg" width="132" height="47" /></a><a href="#"><img src="images/index_57.jpg" width="97" height="47" /></a></div>
+    <div class="login"><a href="#" class="red">>登录</a><a href="#" class="red">>注册</a><a href="#" class="red">>企业入口</a></div>
+  </div>
+  <div id="content">
+    <div class="investList">
+      <h4>投资教室</h4>
+      <div id="Tab7">
+        <div class="Menubox7">
+          <ul>
+            <li id="seven1" onmouseover="setTab('seven',1,4)"  class="hover">视频教室</li>
+            <li id="seven2" onmouseover="setTab('seven',2,4)">投资流程</li>
+            <li id="seven3" onmouseover="setTab('seven',3,4)">投资回报</li>
+            <li id="seven4" onmouseover="setTab('seven',4,4)">资费介绍</li>
+          </ul>
+        </div>
+        <div class="Contentbox7">
+          <div id="con_seven_1" style="display:none"> </div>
+          <div id="con_seven_2" style="display:none">
+            <div class="tzlc"><img src="images/main_21.jpg" width="707" height="542" /><img src="images/main_22.jpg" width="707" height="703" /></div>
+          </div>
+          <div id="con_seven_3" style="display:none">
+            <div class="tzlc"><img src="images/main_23.jpg" width="1024" height="252" /><img src="images/main_24.jpg" width="1024" height="240" /><img src="images/main_25.jpg" width="1023" height="252" /><img src="images/main_26.jpg" width="1023" height="240" /></div>
+          </div>
+          <div id="con_seven_4" style="display:none">
+            <div class="zfjs">
+              <p>1.资产管理费<br />
+                收取投资总额的2%资产管理费</p>
+              <p>2.溢价部分佣金<br />
+                投资期限到期后，出售房产的溢价部分抽取10%的佣金。</p>
+              <p>3.出租成功收取佣金<br />
+                投资期限中，资产出租所获得租金费用抽取其中20%佣金</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div class="link">
+      <div class="fd">
+        <ul>
+          <li><a href="#">公司介绍</a></li>
+          <li><a href="#">合信生利</a></li>
+          <li><a href="#">媒体报道</a></li>
+          <li><a href="#">团队介绍</a></li>
+          <li><a href="#">投资计算器</a></li>
+          <li><a href="#">招贤纳士</a></li>
+          <li><a href="#">联系我们</a></li>
+        </ul>
+        <ul>
+          <li class="khfw"><a href="#">客户服务</a></li>
+          <li class="gfwx"><a href="#">官方微信</a></li>
+          <li class="gfwb"><a href="#">官方微博</a></li>
+        </ul>
+      </div>
+      <div class="tel">
+        <h2>客服电话</h2>
+        <h3>4001234567</h3>
+        <b>9:00-21:00</b> </div>
+    </div>
+    <p>© 2014 合信生利 All rights reserved    合信生利信息科技有限公司   沪ICP证 145663号</p>
+  </div>
+</div>
+</body>
+</html>

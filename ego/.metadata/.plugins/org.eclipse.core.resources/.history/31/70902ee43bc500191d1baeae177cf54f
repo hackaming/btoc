@@ -1,0 +1,33 @@
+### set log levels ###
+log4j.rootLogger=INFO, stdout, debugLog, errorLog
+log4j.logger.net.oip=DEBUG
+#log4j.logger.org.hibernate=DEBUG
+#log4j.logger.org.hibernate.SQL=TRACE
+### user this only for print params of sql ###
+#llog4j.logger.org.hibernate.type=TRACE
+
+### \u8f93\u51fa\u5230\u63a7\u5236\u53f0 ###
+log4j.appender.stdout=org.apache.log4j.ConsoleAppender
+log4j.appender.stdout.layout=org.apache.log4j.PatternLayout
+
+log4j.appender.stdout.layout.ConversionPattern=%d %p [%c] - %m%n
+
+
+### \u8f93\u51fa\u5230\u65e5\u5fd7\u6587\u4ef6 ###
+#log4j.appender.debugLog=org.apache.log4j.DailyRollingFileAppender
+log4j.appender.debugLog=org.apache.log4j.RollingFileAppender
+log4j.appender.debugLog.File=${catalina.home}/logs/cncrowd-log.log
+log4j.appender.debugLog.Append=true
+log4j.appender.debugLog.Threshold=DEBUG
+log4j.appender.debugLog.layout=org.apache.log4j.PatternLayout
+log4j.appender.debugLog.layout.ConversionPattern=%d %p [%c] - %m%n
+log4j.appender.debugLog.MaxFileSize=1024KB
+log4j.appender.debugLog.MaxBackupIndex=30
+
+### \u4fdd\u5b58\u5f02\u5e38\u4fe1\u606f\u5230\u5355\u72ec\u6587\u4ef6 ###
+log4j.appender.errorLog=org.apache.log4j.DailyRollingFileAppender
+log4j.appender.errorLog.File=${catalina.home}/logs/cncrowd-error.log
+log4j.appender.errorLog.Append=true
+log4j.appender.errorLog.Threshold=ERROR
+log4j.appender.errorLog.layout=org.apache.log4j.PatternLayout
+log4j.appender.errorLog.layout.ConversionPattern=%d %p [%c] - %m%n

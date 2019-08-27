@@ -1,0 +1,37 @@
+package com.west;
+
+
+import org.apache.commons.mail.DefaultAuthenticator;
+import org.apache.commons.mail.Email;
+import org.apache.commons.mail.SimpleEmail;
+
+
+import java.io.IOException;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
+public class SendeMailTest {
+    public static void eMailTest(){
+        Email email = new SimpleEmail();
+        email.setHostName("10.164.0.77");
+        email.setSmtpPort(465);
+       
+            try {
+                //email.setAuthentication("2251275876","Hack4ming");
+                email.setAuthenticator(new DefaultAuthenticator("xianming.yan", "Hack01ming"));
+                email.setSSLOnConnect(true);
+                email.setFrom("CompunetixBridge 506");
+                email.setSubject("TestMail");
+                email.setMsg("Test message");
+                email.addTo("xianming.yan@west.com");
+                email.send();
+                System.out.println("Send one time!");
+            } catch (Exception e){
+                e.printStackTrace();
+            }
+
+      
+
+    }
+
+}

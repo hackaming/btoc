@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>合信生利</title>
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="wrap">
+  <div id="header">
+    <div class="money">
+      <h2>累计融资金额:</h2>
+      <p>32,400,000</p>
+    </div>
+    <div class="wx">
+      <p>合信生利微信</p>
+    </div>
+    <div class="menu"> <a href="#"><img src="images/index_52.jpg" width="91" height="47" /></a><a href="#"><img src="images/index_53.jpg" width="109" height="47" /></a><a href="#"><img src="images/index_54.jpg" width="92" height="47" /></a><a href="#"><img src="images/index_55.jpg" width="96" height="47" /></a><a href="#"><img src="images/index_56.jpg" width="132" height="47" /></a><a href="#"><img src="images/index_57.jpg" width="97" height="47" /></a></div>
+    <div class="login"><a href="#" class="red">>登录</a><a href="#" class="red">>注册</a><a href="#" class="red">>企业入口</a></div>
+  </div>
+  <div id="content">
+    <div class="register">
+      <h1>注册</h1>
+      <div class="regis">
+        <div class="perBI"> <img src="images/main_12.jpg" width="672" height="103" />
+          <table border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="100" align="right"><span>昵称：</span></td>
+              <td width="306"><input class="input300" type="text" name="textfield" id="textfield" /></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td align="right"><span>真实姓名：</span></td>
+              <td><input name="textfield2" type="text" class="input300" id="textfield2" /></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td align="right"><span>短信验证码：</span></td>
+              <td><input name="textfield3" type="text" class="input300" id="textfield3" /></td>
+              <td><a class="affirm">获取短信码</a></td>
+            </tr>
+            <tr>
+              <td align="right"><span>设置密码：</span></td>
+              <td><input name="textfield4" type="text" class="input300" id="textfield4" /></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td align="right"><span>重复密码：</span></td>
+              <td><input name="textfield5" type="text" class="input300" id="textfield5" /></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td align="right"><span>验证码：</span></td>
+              <td><input name="textfield6" type="text" class="input60" id="textfield6" />
+              <img src="images/yzm.jpg" width="89" height="30" /></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td height="50" align="right">&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td align="right"><input type="checkbox" name="checkbox" id="checkbox" /></td>
+              <td><label for="checkbox"></label>
+                我已阅读并同意合信生利服务协议</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td height="40" align="right">&nbsp;</td>
+              <td><a class="affirm">立即注册</a></td>
+              <td>&nbsp;</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div class="link">
+      <div class="fd">
+        <ul>
+          <li><a href="#">公司介绍</a></li>
+          <li><a href="#">合信生利</a></li>
+          <li><a href="#">媒体报道</a></li>
+          <li><a href="#">团队介绍</a></li>
+          <li><a href="#">投资计算器</a></li>
+          <li><a href="#">招贤纳士</a></li>
+          <li><a href="#">联系我们</a></li>
+        </ul>
+        <ul>
+          <li class="khfw"><a href="#">客户服务</a></li>
+          <li class="gfwx"><a href="#">官方微信</a></li>
+          <li class="gfwb"><a href="#">官方微博</a></li>
+        </ul>
+      </div>
+      <div class="tel">
+        <h2>客服电话</h2>
+        <h3>4001234567</h3>
+        <b>9:00-21:00</b> </div>
+    </div>
+    <p>© 2014 合信生利 All rights reserved    合信生利信息科技有限公司   沪ICP证 145663号</p>
+  </div>
+</div>
+</body>
+</html>

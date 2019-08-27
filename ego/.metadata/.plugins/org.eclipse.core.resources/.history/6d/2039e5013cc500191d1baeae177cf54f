@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%
+	String path = request.getContextPath();
+	String basePath = request.getScheme() + "://"
+			+ request.getServerName() + ":" + request.getServerPort()
+			+ path + "/";
+%>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>中筹网金</title>
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/xxk.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<c:import url="/header" charEncoding="UTF-8" />
+		<div id="content">
+			<div class="answer">
+				<div class="search">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td width="20"></td>
+							<td width="120"><h2>您的问题</h2></td>
+							<td width="225" valign="middle"><input name="searchAnswer" id="searchAnswer" type="text" /></td>
+							<td width="85" valign="middle"><img onclick="getAnswer('search');" style="cursor: pointer" src="images/main_06.jpg" width="75" height="27" /></td>
+							<td width="102" valign="middle"><img onclick="getAnswer('ask');" style="cursor: pointer" src="images/main_05.jpg" width="102" height="27" /></td>
+							<td align="right" valign="middle"><h3>常见问题：</h3></td>
+							<td valign="middle"><p>不良贷款继续扩大 银行有哪些方式处置坏账</p></td>
+						</tr>
+					</table>
+				</div>
+				<div class="lef fl">
+					<div class="box">
+						<div class="askfor">
+							<iframe src="#" marginheight="0" marginwidth="0" frameborder="0" scrolling="no" width=100% height=100% id="iframepage" name="iframepage" onLoad="iFrameHeight()"></iframe>
+						</div>
+					</div>
+				</div>
+				<div class="rig fr">
+					<div class="box classify">
+						<h3>问题分类</h3>
+						<div>
+							<h4>投资常识</h4>
+							<ul>
+								<li onclick="getAnswer('01')" style="cursor: pointer">常用知识</li>
+								<li onclick="getAnswer('02')" style="cursor: pointer">转让份额</li>
+								<li onclick="getAnswer('03')" style="cursor: pointer">投资期限</li>
+							</ul>
+							<h4>投资回报</h4>
+							<ul>
+								<li onclick="getAnswer('04')" style="cursor: pointer">预估收益</li>
+								<li onclick="getAnswer('05')" style="cursor: pointer">回报方式</li>
+								<li onclick="getAnswer('06')" style="cursor: pointer">升值空间</li>
+							</ul>
+							<h4>投资流程</h4>
+							<ul>
+								<li onclick="getAnswer('07')" style="cursor: pointer">投资问题</li>
+								<li onclick="getAnswer('08')" style="cursor: pointer">注册问题</li>
+							</ul>
+						</div>
+					</div>
+					<div class="banner1">
+						<img src="images/main_03.jpg" width="244" height="206" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<c:import url="/footer" charEncoding="UTF-8" />
+	</div>
+</body>
+<script src="js/jquery-2.0.3.min.js"></script>
+<script src="js/oip.js"></script>
+<script type="text/javascript" language="javascript">
+	function iFrameHeight() {
+		var ifm = document.getElementById("iframepage");
+		var subWeb = document.frames ? document.frames["iframepage"].document
+				: ifm.contentDocument;
+		if (ifm != null && subWeb != null) {
+			ifm.height = subWeb.body.scrollHeight;
+		}
+	}
+	function getAnswer(type) {
+		if (type == 'search') {
+			var params = $("#searchAnswer").val();
+			if (params.length > 0) {
+				params = encodeURI(encodeURI(params))
+				$("#iframepage").attr("src",
+						"searchAnswerList?params=" + params);
+			}
+		} else if (type == 'ask') {
+			$("#iframepage").attr("src", "ask");
+		} else {
+			$("#iframepage").attr("src", "answerList?type=" + type);
+		}
+	}
+</script>
+</html>

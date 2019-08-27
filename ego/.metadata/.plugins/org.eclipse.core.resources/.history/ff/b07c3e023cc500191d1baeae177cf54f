@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<div class="leflist fl">
+	<h2>我的合信</h2>
+	<h3>资金管理</h3>
+	<ul>
+		<li>交易记录</li>
+		<li>充值</li>
+		<li>提现</li>
+	</ul>
+	<h3>账户管理</h3>
+	<ul>
+		<li><a href="secure/userBaseInfo">个人基础信息</a></li>
+		<li>安全信息</li>
+		<li>银行卡信息</li>
+	</ul>
+	<h3>互动管理</h3>
+	<ul>
+		<li>站内消息</li>
+		<li>通知设置</li>
+	</ul>
+	<h3>优惠券信息</h3>
+	<ul>
+		<li>获取邀请码</li>
+		<li>优惠券兑换</li>
+		<li>积分信息</li>
+	</ul>
+</div>

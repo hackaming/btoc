@@ -1,0 +1,20 @@
+<form action ="http://mertest.chinapnr.com/muser/publicRequests" name="fff" id="fff" method="post">  
+<input name="Version" value="${params.Version}"/>
+<input name="CmdId" value="${params.CmdId}"/>
+<input name="MerCustId" value="${params.MerCustId}"/>
+<input name="SellCustId" value="${params.SellCustId}"/>
+<input name="CreditAmt" value="${params.CreditAmt}"/>
+<input name="CreditDealAmt" value="${params.CreditDealAmt}"/>
+<textarea name="BidDetails">${params.BidDetails}</textarea>
+<input name="Fee" value="${params.Fee}"/>
+<textarea name="DivDetails">${params.DivDetails}</textarea>
+<input name="BuyCustId" value="${params.BuyCustId}"/>
+<input name="OrdId" value="${params.OrdId}"/>
+<input name="OrdDate" value="${params.OrdDate}"/>
+<input name="RetUrl" value="${params.RetUrl}"/>
+<input name="BgRetUrl" value="${params.BgRetUrl}"/>
+<input name="ChkValue" value="${params.ChkValue}"/>
+</form>
+<script type="text/javascript">
+document.fff.submit();
+</script>

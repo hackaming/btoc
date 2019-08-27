@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.ego.dubbo.service.ItbItem&apos; to &apos;TbItemDubboService&apos;&#x0D;&#x0A;- Original project: &apos;ego-service&apos;&#x0D;&#x0A;- Original element: &apos;com.ego.dubbo.service.ItbItem&apos;&#x0D;&#x0A;- Renamed element: &apos;com.ego.dubbo.service.TbItemDubboService&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ItbItem&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;com.ego.dubbo.service{ItbItem.java[ItbItem" matchStrategy="1" name="TbItemDubboService" qualified="false" references="true" similarDeclarations="false" stamp="1566538680732" textual="false" version="1.0"/>
+</session>

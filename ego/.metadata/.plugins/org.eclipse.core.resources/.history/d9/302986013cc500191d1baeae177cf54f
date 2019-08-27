@@ -1,0 +1,470 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>合信生利</title>
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/xxk.js"></script>
+</head>
+<body>
+<div id="wrap">
+  <div id="header">
+    <div class="money">
+      <h2>累计融资金额:</h2>
+      <p>32,400,000</p>
+    </div>
+    <div class="wx">
+      <p>合信生利微信</p>
+    </div>
+    <div class="menu"> <a href="#"><img src="images/index_52.jpg" width="91" height="47" /></a><a href="#"><img src="images/index_53.jpg" width="109" height="47" /></a><a href="#"><img src="images/index_54.jpg" width="92" height="47" /></a><a href="#"><img src="images/index_55.jpg" width="96" height="47" /></a><a href="#"><img src="images/index_56.jpg" width="132" height="47" /></a><a href="#"><img src="images/index_57.jpg" width="97" height="47" /></a></div>
+    <div class="login"><a href="#" class="red">>登录</a><a href="#" class="red">>注册</a><a href="#" class="red">>企业入口</a></div>
+  </div>
+  <div id="content">
+    <div class="project">
+      <h2>首创青旅岛尚，360度环水楼王级别墅  投资期限：24个月</h2>
+      <div class="intro">
+        <div class="rig fl">
+          <h3>众筹不动产价值：4，000，000</h3>
+          <h4>已完成：1，800,000</h4>
+          <div class="progress">
+            <div class="bar"></div>
+            <div class="data"><b>30%</b> FUNDED</div>
+          </div>
+          <h5>剩余时间：<span>160‘32’49</span></h5>
+          <div class="rate">
+            <ul>
+              <li>达成率：<span>10%</span></li>
+              <li class="libor">众筹分数:<span>1800</span></li>
+              <li class="libor">众筹人数:<span>360</span></li>
+            </ul>
+          </div>
+          <div class="unit">
+            <ul>
+              <li>众筹最小单位：<span>1000元</span></li>
+              <li>总分数：<span>4000份</span></li>
+              <li>最长持有期限：<span>24个月</span></li>
+              <li>剩余分数:<span>2200</span></li>
+            </ul>
+          </div>
+          <div class="choose"><b>份数：</b>
+            <a href="#"><span class="sub"><img src="images/main_31.jpg" width="24" height="31" /></span></a> <input name="" type="text" /> 
+            <a href="#"><span class="plus"><img src="images/main_32.jpg" width="24" height="31" /></span></a>
+          <a class="Confirm" href="#">确认</a></div>
+          <div class="calculator">
+            <h6>收益计算器</h6>
+            <table width="80%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="140" align="right">投资金额：</td>
+                <td>4，000，000</td>
+              </tr>
+              <tr>
+                <td align="right">众筹房价总额：</td>
+                <td>4，000，000</td>
+              </tr>
+              <tr>
+                <td align="right">售出房价总额：</td>
+                <td>4，000，000</td>
+              </tr>
+              <tr>
+                <td height="50" colspan="2" align="center"><a class="affirm" href="#">计算</a></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="lef fr"><img src="images/index_70.jpg" width="536" height="346" />
+          <div id="Tab3">
+            <div class="Menubox3">
+              <ul>
+                <li id="three1" onclick="setTab('three',1,8)"  class="hover">项目介绍</li>
+                <li id="three2" onclick="setTab('three',2,8)">价格走势</li>
+                <li id="three3" onclick="setTab('three',3,8)">第三方机构</li>
+                <li id="three4" onclick="setTab('three',4,8)" style="margin-right:0px;">众筹明细</li>
+                <li id="three5" onclick="setTab('three',5,8)">合同协议</li>
+                <li id="three6" onclick="setTab('three',6,8)">转让份额</li>
+                <li id="three7" onclick="setTab('three',7,8)">运营状况</li>
+                <li id="three8" onclick="setTab('three',8,8)" style="margin-right:0px;">投票</li>
+              </ul>
+            </div>
+            <div class="Contentbox3">
+              <div id="con_three_1" class="hover">
+                <div class="tt jbxx">
+                  <h3>基本信息</h3>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="140" align="right">项目名称：</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td align="right">项目原价：</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td align="right">众筹金额：</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td align="right">众筹分数：</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td align="right">众筹期限：</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td align="right">众筹最小单位：</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td align="right">税费预算：</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td align="right">不动产面积：</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td align="right">不动产单价：</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="140" align="right">开发商：</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td align="right">物业地址：</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td align="right">装修状况：</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td align="right">物业类别：</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td align="right">开盘时间：</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td align="right">建造时间：</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td align="right">产权类型：</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td align="right">是否有租约：</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="tt xmjs">
+                  <h3>项目简介</h3>
+                  <p>首创青旅岛尚位于素有“民间博物馆之乡”之称的锦溪古镇。360°环水岛居别墅，是上海旅居区的经典之作，坐拥五湖三荡的资源以
+                    及商业中心、休闲娱乐、学苑教育、医疗保健和人文风物等旅居配套！此刻收藏岛尚，不失为明智之举。</p>
+                  <div class="xmjspic"><img src="images/main_15.jpg" width="495" height="288" />
+                    <div class="scroll"><a href="#"><img src="images/main_27.png" width="26" height="22" /></a><a href="#"><img src="images/main_28.png" width="26" height="22" /></a><a href="#"><img src="images/main_29.png" width="26" height="22" /></a><a href="#"><img src="images/main_30.png" width="26" height="22" /></a></div>
+                  </div>
+                </div>
+                <div class="tt kfsxx">
+                  <h3>开发商信息</h3>
+                  <p><img src="images/main_18.jpg" width="156" height="56" /><br />
+                    开发商：首创置业，首创置业是中国领先的房地产综合营运商。公司于2003年6月19日在香港联合交易所主板上市（股票代码HK2868），综合实力居国内领
+                    先地位。首创置业以北京为基地，自成立以来在北京地区累计开发规模超过400万平方米，总投资超过300亿元。目前已进入全国四大区
+                    域十三个城市，土地储备规模超过1000万平方米，拥有较高的市场知名度和品牌影响力。秉承”目标一致、遵从规则、学习创新”的企业文
+                    化，追求卓越、开放透明的首创置业，以”创新生活，创造价值”的开发理念，为客户营造优质生活空间，为投资者创造稳定增长收益，为
+                    社会和谐不断贡献。</p>
+                </div>
+              </div>
+              <div id="con_three_2" style="display:none">
+                <div class="tt">
+                  <h3>不动产历史价格走势</h3>
+                  <div class="jgzs"><img src="images/main_19.jpg" width="496" height="275" /></div>
+                </div>
+                <div class="tt">
+                  <h3>周边房价走势图</h3>
+                  <div class="jgzs"><img src="images/main_19.jpg" width="496" height="275" /></div>
+                </div>
+              </div>
+              <div id="con_three_3" style="display:none;">
+                <div class="tt jbxx">
+                  <h3>第三方资产管理公司</h3>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="110" align="right">公司名称：</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td align="right">地址：</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td align="right">法人：</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td align="right">注册资金：</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td align="right">电话：</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="100" align="right">营业执照号：</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td align="right">项目开户行：</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td align="right">担保机构：</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td align="right">监管机构：</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td align="right">经营范围：</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                  </table>
+                  <div class="jgzs"><img src="images/main_20.jpg" width="427" height="204" /></div>
+                </div>
+              </div>
+              <div id="con_three_4"  style="display:none">
+                <div class="tt">
+                  <h3>完成进度</h3>
+                  <div class="yxzk">
+                    <table class="tableM" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="90" align="right">众筹金额：</td>
+                        <td align="left">4,650,000</td>
+                        <td width="90" align="right">参与人数：</td>
+                        <td align="left">6000</td>
+                      </tr>
+                      <tr>
+                        <td align="right">已众筹：</td>
+                        <td align="left">465,000</td>
+                        <td align="right">剩余时间：</td>
+                        <td align="left">26”15“00</td>
+                      </tr>
+                    </table>
+                    <div class="wcjd">
+                      <div class="progress">
+                        <div class="bar"></div>
+                        <div class="data"><b>30%</b> FUNDED</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tt detail">
+                  <h3>明细</h3>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td height="30" align="center" ><span>序号</span></td>
+                      <td align="center" ><span>用户</span></td>
+                      <td align="center" ><span>份数</span></td>
+                      <td align="center" ><span>金额</span></td>
+                      <td align="center" ><span>众筹时间</span></td>
+                      <td align="center" ><span>已转让份额</span></td>
+                      <td align="center" ><span>状态</span></td>
+                    </tr>
+                    <tr>
+                      <td align="center">1</td>
+                      <td align="center">ma***dan</td>
+                      <td align="center">1</td>
+                      <td align="center">5,000</td>
+                      <td align="center">2014.7.22 19:30</td>
+                      <td align="center">2017.5.6</td>
+                      <td align="center">投资期限中</td>
+                    </tr>
+                    <tr>
+                      <td align="center">2</td>
+                      <td align="center">ma***dan</td>
+                      <td align="center">1</td>
+                      <td align="center">5,000</td>
+                      <td align="center">2014.7.22 19:30</td>
+                      <td align="center">2017.5.6</td>
+                      <td align="center">投资期限中</td>
+                    </tr>
+                    <tr>
+                      <td align="center">3</td>
+                      <td align="center">ma***dan</td>
+                      <td align="center">1</td>
+                      <td align="center">5,000</td>
+                      <td align="center">2014.7.22 19:30</td>
+                      <td align="center">2017.5.6</td>
+                      <td align="center">投资期限中</td>
+                    </tr>
+                    <tr>
+                      <td align="center">4</td>
+                      <td align="center">ma***dan</td>
+                      <td align="center">1</td>
+                      <td align="center">5,000</td>
+                      <td align="center">2014.7.22 19:30</td>
+                      <td align="center">2017.5.6</td>
+                      <td align="center">投资期限中</td>
+                    </tr>
+                    <tr>
+                      <td align="center">5</td>
+                      <td align="center">ma***dan</td>
+                      <td align="center">1</td>
+                      <td align="center">5,000</td>
+                      <td align="center">2014.7.22 19:30</td>
+                      <td align="center">2017.5.6</td>
+                      <td align="center">投资期限中</td>
+                    </tr>
+                    <tr>
+                      <td align="center">6</td>
+                      <td align="center">ma***dan</td>
+                      <td align="center">1</td>
+                      <td align="center">5,000</td>
+                      <td align="center">2014.7.22 19:30</td>
+                      <td align="center">2017.5.6</td>
+                      <td align="center">投资期限中</td>
+                    </tr>
+                    <tr>
+                      <td align="center">7</td>
+                      <td align="center">ma***dan</td>
+                      <td align="center">1</td>
+                      <td align="center">5,000</td>
+                      <td align="center">2014.7.22 19:30</td>
+                      <td align="center">2017.5.6</td>
+                      <td align="center">投资期限中</td>
+                    </tr>
+                    <tr>
+                      <td align="center">8</td>
+                      <td align="center">ma***dan</td>
+                      <td align="center">1</td>
+                      <td align="center">5,000</td>
+                      <td align="center">2014.7.22 19:30</td>
+                      <td align="center">2017.5.6</td>
+                      <td align="center">投资期限中</td>
+                    </tr>
+                    <tr>
+                      <td align="center">9</td>
+                      <td align="center">ma***dan</td>
+                      <td align="center">1</td>
+                      <td align="center">5,000</td>
+                      <td align="center">2014.7.22 19:30</td>
+                      <td align="center">2017.5.6</td>
+                      <td align="center">投资期限中</td>
+                    </tr>
+                    <tr>
+                      <td align="center">10</td>
+                      <td align="center">ma***dan</td>
+                      <td align="center">1</td>
+                      <td align="center">5,000</td>
+                      <td align="center">2014.7.22 19:30</td>
+                      <td align="center">2017.5.6</td>
+                      <td align="center">投资期限中</td>
+                    </tr>
+                    <tr>
+                      <td align="center">11</td>
+                      <td align="center">ma***dan</td>
+                      <td align="center">1</td>
+                      <td align="center">5,000</td>
+                      <td align="center">2014.7.22 19:30</td>
+                      <td align="center">2017.5.6</td>
+                      <td align="center">投资期限中</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div id="con_three_5"  style="display:none;">
+                <div class="tt">
+                  <h3>服务协议</h3>
+                  <div class="service">
+                    <div class="downLoad"><a href="#" class="affirm">下载</a></div>
+                    <h4>合信生利服务协议</h4>
+                    <p>双方会晤的一个花絮10日受到众多外媒关注。法国国际广播电台称，周六在东盟会议外围举行的中美外长双边会谈上，因为迟到，克里受到中国外长王毅的责备。王毅和克里的会晤原定于当地时间下午3点半左右，之后会晤被推迟了1个小时。可是直到5点，克里才姗姗来迟。在落座之前，王毅首先说，“你迟到了”。克里则简单回答说“对不起”。落座之后，中国外长通过翻译继续刚才的话题说：“不好意思，可是我们从4点半就在这里等你了，等了你半个小时。”克里则尴尬地笑着道歉说“我真的很抱歉”。</p>
+                  </div>
+                </div>
+                <div class="tt">
+                  <h3>转让协议</h3>
+                  <div class="service">
+                    <div class="downLoad"><a href="#" class="affirm">下载</a></div>
+                    <h4>合信生利服务协议</h4>
+                    <p>双方会晤的一个花絮10日受到众多外媒关注。法国国际广播电台称，周六在东盟会议外围举行的中美外长双边会谈上，因为迟到，克里受到中国外长王毅的责备。王毅和克里的会晤原定于当地时间下午3点半左右，之后会晤被推迟了1个小时。可是直到5点，克里才姗姗来迟。在落座之前，王毅首先说，“你迟到了”。克里则简单回答说“对不起”。落座之后，中国外长通过翻译继续刚才的话题说：“不好意思，可是我们从4点半就在这里等你了，等了你半个小时。”克里则尴尬地笑着道歉说“我真的很抱歉”。</p>
+                  </div>
+                </div>
+              </div>
+              <div id="con_three_6" style="display:none"> </div>
+              <div id="con_three_7" style="display:none">
+                <div class="tt">
+                  <h3>周边租金走势图</h3>
+                  <div class="jgzs"><img src="images/main_19.jpg" width="496" height="275" /></div>
+                </div>
+                <div class="tt">
+                  <h3>运营状况</h3>
+                  <div class="yxzk">
+                    <table class="tableM" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="90">房屋状态:</td>
+                        <td align="left">已出租</td>
+                        <td width="90">租金金额：</td>
+                        <td align="left">6000元/月</td>
+                      </tr>
+                      <tr>
+                        <td>承租企业：</td>
+                        <td align="left">上海*****有限公司</td>
+                        <td>出租日期：</td>
+                        <td align="left">2014.6.7</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div id="con_three_8" style="display:none">
+                <div class="tt tp">
+                  <h3>投票</h3>
+                  <div class="jgzs"><img src="images/main_19.jpg" width="496" height="275" />
+                    <h4>当前售出价格为：16,300/m2</h4>
+                    <div class="butt"><a href="#" class="affirm">同意</a><a href="#" class="affirm">出售</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div class="link">
+      <div class="fd">
+        <ul>
+          <li><a href="#">公司介绍</a></li>
+          <li><a href="#">合信生利</a></li>
+          <li><a href="#">媒体报道</a></li>
+          <li><a href="#">团队介绍</a></li>
+          <li><a href="#">投资计算器</a></li>
+          <li><a href="#">招贤纳士</a></li>
+          <li><a href="#">联系我们</a></li>
+        </ul>
+        <ul>
+          <li class="khfw"><a href="#">客户服务</a></li>
+          <li class="gfwx"><a href="#">官方微信</a></li>
+          <li class="gfwb"><a href="#">官方微博</a></li>
+        </ul>
+      </div>
+      <div class="tel">
+        <h2>客服电话</h2>
+        <h3>4001234567</h3>
+        <b>9:00-21:00</b> </div>
+    </div>
+    <p>© 2014 合信生利 All rights reserved    合信生利信息科技有限公司   沪ICP证 145663号</p>
+  </div>
+</div>
+</body>
+</html>

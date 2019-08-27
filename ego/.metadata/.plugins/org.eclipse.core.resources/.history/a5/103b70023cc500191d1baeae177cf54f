@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>中筹网金</title>
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/xxk.js"></script>
+</head>
+<body>
+
+  
+  
+  <div id="header">
+      <div class="inner clearfix">
+        <h1><a href="/"><img alt="" src="img/header-logo.png"></a></h1>
+        <div class="header-right">
+          <div class="header-right-top clearfix">
+            <p class="header-money">
+              <img alt="" src="img/header-money.png"><br>
+              <span id="top_amount">￥1,183,580,000</span>
+              
+            </p>
+          <p class="link">
+            <a target="_blank"  href="#"><img alt="weibo" src="img/ico-weibo.png"></a>
+            <a target="_blank"  href="#"><img alt="weixin" src="img/ico-weixin.png"></a>
+            
+          </p>
+          </div>
+          <div class="header-right-mid">
+          <ul class="clearfix" id="gnavi">
+            <li><a href="#"><img alt="中筹网金" src="img/gnavi01_off.png"></a></li>
+            <li><a href="#"><img alt="投资教室" src="img/gnavi02_off.png"></a></li>
+            <li><a href="#"><img alt="投资项目" src="img/gnavi03_off.png"></a></li>
+            <li><a href="#"><img alt="转让市场" src="img/gnavi04_off.png"></a></li>
+            <li><a href="#"><img alt="投资者俱乐部" src="img/gnavi05_off.png"></a></li>
+            <li><a href="#"><img alt="企业介绍" src="img/gnavi06_off.png"></a></li>
+          </ul>
+          </div>
+          <div class="header-right-btm clearfix">
+            <ul class="clearfix" id="gnavi02">
+              <li><a href="#">>登录</a></li>
+              <li><a href="#">>注册</a></li>
+             
+             
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <div class="topic-path">
+  <div class="inner clearfix">
+    <div class="topics-text">
+      <p><a href="/">首页</a> &gt; 用户中心</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="centerPanel">
+  
+  <div class="mainRoundBox w1000">
+  	<div class="leftNav">
+	  <h2 class="nav_title navwyjieru"><a class=" usernavcur" href="#">我的账户</a></h2>
+	  
+      <h2 class="nav_title zjguanli"><a class=" usernav" href="#">用户类型</a></h2>
+	  <h2 class="nav_title hdguanli"><a class=" usernav" href="#">密码修改</a></h2>
+	  
+	  <h2 class="nav_title jbshezhi"><a class=" usernav" href="#">资料修改</a></h2>
+	 
+	  
+	</div>
+	<div class="rightMain">
+	  <div class="contentMain dashedLineBot">
+	    <!-- 个人信息 start -->
+	  	
+	  	
+		
+		<ul class="personBorrowData">
+		  <li>
+		  	<label style="float:left" class="nameBold">您好~！沙文西</label>　　
+			
+		
+            <span style=" float:left; margin-left:20px">
+		      <a href="#" class="autIcon aut_identity"></a>
+			  <a href="#" class="autIcon aut_phone ml5"></a>
+			  <a href="#" class="autIcon aut_email ml5"></a></span>
+			  <!--<a href="#" class="autIcon aut_bankcard ml5"></a>
+			  <a href="#" class="autIcon aut_tpassword ml5"></a>
+			  <a href="#" class="autIcon aut_question ml5"></a>-->
+		   </li>
+           
+           <li >[&nbsp;<a href="#" class="fcbt">充值</a>&nbsp;|&nbsp;<a href="#" class="fcbt">提现</a>&nbsp;|&nbsp;<a href="#" class="fcbt">资金记录</a>&nbsp;]
+		  </li>
+           
+		  <li>
+		  	账户余额<span class="f18 ml10 fcbt">￥1000000.00</span>
+		  </li>
+		  <li>
+		  	冻结余额<span class="f18 ml10 fcbt">￥1000000.00</span>
+		  </li>
+		  <li>
+		  	可用余额<span class="f18 ml10 fcbt">￥1000000.00</span>
+		  </li>
+		  
+		  <li ><label class="fl">安全等级</label>
+		  	<!-- <div class="safety">
+			  	<span class="save_grade1"></span>
+				<span class="save_grade2"></span>
+				<span class="save_grade3"></span>
+			  </div> -->
+			  <div class="safety" style="margin:12px 0 0 10px;">
+			  	<span class="save_grade1 bgred"></span>
+				<span class="save_grade2 bgorange"></span>
+				<span class="save_grade3 bggreen"></span>
+			  </div>
+			  <a href="#" class="fl fcbt ml10">提升</a>
+		   </li>
+		  
+		</ul>
+        
+        
+        <div class="incomePanel  ml10">
+          <p class="intop">
+          	<span class="title">预计收益</span>
+            <span>1000.00</span>
+          </p>
+          <p class="inbottom">
+          	
+            <span >历史收益：<b class="fcot ml10">754.00</b>&nbsp;元</span>
+            <span class="mt15">待收金额：<b class="fcot ml10">2354.00</b>&nbsp;元</span>
+           
+          </p>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+	  </div>
+	  <!-- 个人信息 end -->
+	 
+     <div class=" tab">
+          
+          
+           
+          <div id="Tab3">
+            <div class="Menubox3" style="width:690px">
+              <ul>
+                <li id="three1" onclick="setTab('three',1,8)"  class="hover">认购的项目</li>
+                <li id="three2" onclick="setTab('three',2,8)">喜欢的项目</li>
+                
+              </ul>
+            </div>
+            <div class="Contentbox3">
+              <div id="con_three_1" class="hover">
+                
+                <ul class="borrowUl">
+			<li>
+			  <div class="headphoto "><img src="images/index_40x.jpg"></div>
+              
+              <div class=" bor_con">
+			  <p class="bor_title">
+				<span class="ditem_t">首创青旅岛尚，360度环水楼王级别墅 投资期限：24个月
+</span>
+				
+			  </p>
+			  <p class="bor_data">
+               <span class="ditem">已募集金额：￥1,730,000</span>
+				<span class="ditem">募集目标金额：￥5,000,000</span>
+				<span class="ditem">年利率：16%</span>
+                <span class="ditem">我的份额：120份</span>
+				<span class="pditem">借款期限：3个月</span>
+			  </p>
+              <a href="#" class="btn_status bid">追加认购</a>
+              <div class="clear"></div>
+			  <div class="progress" style="margin-left: 12px;
+  
+    width: 95%;">
+            <div class="bar"></div>
+            <div class="data"><b>30%</b> FUNDED</div>
+          </div>
+              </div> 
+			  
+			  
+			</li>
+		</ul>
+                
+              </div>
+              <div id="con_three_2" style="display:none">
+                
+                
+                 <ul class="borrowUl">
+			<li>
+			  <div class="headphoto "><img src="images/index_40x.jpg"></div>
+              
+              <div class=" bor_con">
+			  <p class="bor_title">
+				<span class="ditem_t">首创青旅岛尚，360度环水楼王级别墅 投资期限：24个月
+</span>
+				<!--<img src="images/bao.png" />
+				<img src="images/di.png" />-->
+			  </p>
+			  <p class="bor_data">
+               <span class="ditem">已募集金额：￥1,730,000</span>
+				<span class="ditem">募集目标金额：￥5,000,000</span>
+				<span class="ditem">年利率：16%</span>
+                <span class="ditem">我的份额：120份</span>
+				<span class="pditem">借款期限：3个月</span>
+			  </p>
+              <a href="#" class="btn_status bid">我要认购</a>
+              <div class="clear"></div>
+			  <div class="progress" style="margin-left: 12px;
+  
+    width: 95%;">
+            <div class="bar"></div>
+            <div class="data"><b>30%</b> FUNDED</div>
+          </div>
+              </div> 
+			  
+			  
+			</li>
+		</ul>
+                
+                
+              </div>
+              
+             
+              
+            </div>
+          </div>
+        </div>
+     
+	
+	</div>
+  </div>
+</div>
+
+
+
+
+
+<div class="clear"></div>
+
+  
+ 
+  <div id="footer">
+    <div class="link">
+      <div class="fd">
+        <ul>
+          <li><a href="#">公司介绍</a></li>
+          <li><a href="#">合信生利</a></li>
+          <li><a href="#">媒体报道</a></li>
+          <li><a href="#">团队介绍</a></li>
+          <li><a href="#">投资计算器</a></li>
+          <li><a href="#">招贤纳士</a></li>
+          <li><a href="#">联系我们</a></li>
+        </ul>
+        <ul>
+          <li class="khfw"><a href="#">客户服务</a></li>
+          <li class="gfwx"><a href="#">官方微信</a></li>
+          <li class="gfwb"><a href="#">官方微博</a></li>
+        </ul>
+      </div>
+      <div class="tel">
+        <h2>客服电话</h2>
+        <h3>4001234567</h3>
+        <b>9:00-21:00</b> </div>
+    </div>
+    <p>© 2014 合信生利 All rights reserved    合信生利信息科技有限公司   沪ICP证 145663号</p>
+  </div>
+
+</body>
+</html>

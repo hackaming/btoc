@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>合信生利</title>
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="wrap">
+  <div id="header">
+    <div class="money">
+      <h2>累计融资金额:</h2>
+      <p>32,400,000</p>
+    </div>
+    <div class="wx">
+      <p>合信生利微信</p>
+    </div>
+    <div class="menu"> <a href="#"><img src="images/index_52.jpg" width="91" height="47" /></a><a href="#"><img src="images/index_53.jpg" width="109" height="47" /></a><a href="#"><img src="images/index_54.jpg" width="92" height="47" /></a><a href="#"><img src="images/index_55.jpg" width="96" height="47" /></a><a href="#"><img src="images/index_56.jpg" width="132" height="47" /></a><a href="#"><img src="images/index_57.jpg" width="97" height="47" /></a></div>
+    <div class="login"><a href="#" class="red">>登录</a><a href="#" class="red">>注册</a><a href="#" class="red">>企业入口</a></div>
+  </div>
+  <div id="content">
+    <div class="leflist fl">
+      <h2>我的合信</h2>
+      <h3>资金管理</h3>
+      <ul>
+        <li>交易记录</li>
+        <li>充值</li>
+        <li>提现</li>
+      </ul>
+      <h3>账户管理</h3>
+      <ul>
+        <li>个人基础信息</li>
+        <li>安全信息</li>
+        <li>银行卡信息</li>
+      </ul>
+      <h3>互动管理</h3>
+      <ul>
+        <li>站内消息</li>
+        <li>通知设置</li>
+      </ul>
+      <h3>优惠券信息</h3>
+      <ul>
+        <li>获取邀请码</li>
+        <li>优惠券兑换</li>
+        <li>积分信息</li>
+      </ul>
+    </div>
+    <div class="riglist fr">
+      <div class="zwbox">
+        <h2>个人基础信息</h2>
+        <div class="perBI">
+          <div class="modify"><a>修改信息</a></div>
+          <table border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="120" rowspan="15" align="right" valign="top"><img src="images/index_50.jpg" width="110" height="99" /></td>
+              <td width="100" align="right"><span>昵称</span></td>
+              <td width="306"><input class="input300" type="text" name="textfield" id="textfield" /></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td align="right"><span>真实姓名</span></td>
+              <td><input name="textfield2" type="text" class="input300" id="textfield2" /></td>
+              <td><i>已认证</i></td>
+            </tr>
+            <tr>
+              <td align="right"><span>身份证号</span></td>
+              <td><input name="textfield3" type="text" class="input300" id="textfield3" /></td>
+              <td><a href="#" class="redUnder">去认证</a></td>
+            </tr>
+            <tr>
+              <td align="right"><span>手机号</span></td>
+              <td><input name="textfield4" type="text" class="input300" id="textfield4" /></td>
+              <td><i>已绑定</i></td>
+            </tr>
+            <tr>
+              <td align="right"><span>邮箱地址</span></td>
+              <td><input name="textfield5" type="text" class="input300" id="textfield5" /></td>
+              <td><a href="#" class="redUnder">去绑定</a></td>
+            </tr>
+            <tr>
+              <td align="right"><span>性别</span></td>
+              <td><input type="radio" name="radio" id="radio" value="radio" />
+                <label for="radio"></label>
+                男
+                <input style="margin-left:16px;"  type="radio" name="radio2" id="radio2" value="radio2" />
+                <label for="radio2"></label>
+                女</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td align="right"><span>出生日期</span></td>
+              <td><input name="textfield6" type="text" class="input300" id="textfield6" /></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td align="right"><span>最高学历</span></td>
+              <td><input name="textfield7" type="text" class="input300" id="textfield7" /></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td align="right"><span>毕业院校</span></td>
+              <td><input name="textfield8" type="text" class="input300" id="textfield8" /></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td align="right"><span>婚姻状况</span></td>
+              <td><label for="select"></label>
+                <select name="select" class="select40" id="select">
+                  <option>已婚</option>
+                  <option>未婚</option>
+              </select></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td align="right"><span>居住地址</span></td>
+              <td><input name="textfield10" type="text" class="input300" id="textfield10" /></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td align="right"><span>公司行业</span></td>
+              <td><input name="textfield11" type="text" class="input300" id="textfield11" /></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td align="right"><span>公司规模</span></td>
+              <td><input name="textfield12" type="text" class="input300" id="textfield12" /></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td align="right"><span>职位</span></td>
+              <td><input name="textfield14" type="text" class="input300" id="textfield14" /></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td align="right"><span>月收入</span></td>
+              <td><input name="textfield13" type="text" class="input300" id="textfield13" /></td>
+              <td>&nbsp;</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div class="link">
+      <div class="fd">
+        <ul>
+          <li><a href="#">公司介绍</a></li>
+          <li><a href="#">合信生利</a></li>
+          <li><a href="#">媒体报道</a></li>
+          <li><a href="#">团队介绍</a></li>
+          <li><a href="#">投资计算器</a></li>
+          <li><a href="#">招贤纳士</a></li>
+          <li><a href="#">联系我们</a></li>
+        </ul>
+        <ul>
+          <li class="khfw"><a href="#">客户服务</a></li>
+          <li class="gfwx"><a href="#">官方微信</a></li>
+          <li class="gfwb"><a href="#">官方微博</a></li>
+        </ul>
+      </div>
+      <div class="tel">
+        <h2>客服电话</h2>
+        <h3>4001234567</h3>
+        <b>9:00-21:00</b> </div>
+    </div>
+    <p>© 2014 合信生利 All rights reserved    合信生利信息科技有限公司   沪ICP证 145663号</p>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>中筹网金</title>
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/xxk.js"></script>
+</head>
+<body>
+
+  
+  
+  <div id="header">
+      <div class="inner clearfix">
+        <h1><a href="/"><img alt="" src="img/header-logo.png"></a></h1>
+        <div class="header-right">
+          <div class="header-right-top clearfix">
+            <p class="header-money">
+              <img alt="" src="img/header-money.png"><br>
+              <span id="top_amount">￥1,183,580,000</span>
+              
+            </p>
+          <p class="link">
+            <a target="_blank"  href="#"><img alt="weibo" src="img/ico-weibo.png"></a>
+            <a target="_blank"  href="#"><img alt="weixin" src="img/ico-weixin.png"></a>
+            
+          </p>
+          </div>
+          <div class="header-right-mid">
+          <ul class="clearfix" id="gnavi">
+            <li><a href="#"><img alt="中筹网金" src="img/gnavi01_off.png"></a></li>
+            <li><a href="#"><img alt="投资教室" src="img/gnavi02_off.png"></a></li>
+            <li><a href="#"><img alt="投资项目" src="img/gnavi03_off.png"></a></li>
+            <li><a href="#"><img alt="转让市场" src="img/gnavi04_off.png"></a></li>
+            <li><a href="#"><img alt="投资者俱乐部" src="img/gnavi05_off.png"></a></li>
+            <li><a href="#"><img alt="企业介绍" src="img/gnavi06_off.png"></a></li>
+          </ul>
+          </div>
+          <div class="header-right-btm clearfix">
+            <ul class="clearfix" id="gnavi02">
+              <li><a href="#">>登录</a></li>
+              <li><a href="#">>注册</a></li>
+             
+             
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <div class="topic-path">
+  <div class="inner clearfix">
+    <div class="topics-text">
+      <p><a href="/">首页</a> &gt; 用户中心</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="centerPanel">
+  
+  <div class="mainRoundBox w1000">
+  	<div class="leftNav">
+	  <h2 class="nav_title navwyjieru"><a class=" usernav" href="#">我的账户</a></h2>
+	  
+      <h2 class="nav_title zjguanli"><a class=" usernav" href="#">会员认证</a></h2>
+	  <h2 class="nav_title hdguanli"><a class=" usernavcur" href="#">密码修改</a></h2>
+	  
+	  <h2 class="nav_title jbshezhi"><a class=" usernav" href="#">资料修改</a></h2>
+	 
+	  
+	</div>
+	<div class="rightMain">
+                <div class="contentMain"  style="margin-bottom:0">
+                    <h3 class="rc_title">
+                        登录密码修改</h3>
+                </div>
+                <div class="contentMain">
+                    <p class="rcin_item mt10">
+                        <label class="w120">
+                            用户名：</label>
+                        <span id="userName">anthole</span>
+                    </p>
+                    <p class="rcin_item">
+                        <label class="w120">
+                            原密码：</label>
+                        <span>
+                            <input type="password" value="" class="rcin_text fl">
+                            <span class="fc6 ml10" >请输入您的原密码</span>
+                            
+                       </span>
+                    </p>
+                    <p class="rcin_item">
+                        <label class="w120">
+                            新密码：</label>
+                        <span>
+                            <input type="password"   value="" class="rcin_text fl"><span class="fc6 ml10">请使用8-16个字符的英文字母、符号和数字的组合</span></span>
+                    </p>
+                    <p class="rcin_item">
+                        <label class="w120">
+                            密码强度：</label>
+                        <span><span style="margin-top: 15px;" class="safety"><span class="save_grade1"></span>
+                            <span class="save_grade2"></span><span class="save_grade3"></span></span></span>
+                    </p>
+                    <p class="rcin_item">
+                        <label class="w120">
+                            再次输入新密码：</label>
+                        <span>
+                            <input type="password"  value="" class="rcin_text">
+                            </span>
+                    </p>
+                    <p style=" margin-left:125px; margin-top:7px" class="rcin_item">
+                       <span>
+                          
+                           <a style="margin:10px 0 0 5px;" class="btn_status bid" href="#">立即修改</a>
+                       </span>
+                    </p>
+                </div>
+            </div>
+            
+            
+            
+  </div>
+</div>
+
+
+
+
+
+<div class="clear"></div>
+
+  
+
+  <div id="footer">
+    <div class="link">
+      <div class="fd">
+        <ul>
+          <li><a href="#">公司介绍</a></li>
+          <li><a href="#">合信生利</a></li>
+          <li><a href="#">媒体报道</a></li>
+          <li><a href="#">团队介绍</a></li>
+          <li><a href="#">投资计算器</a></li>
+          <li><a href="#">招贤纳士</a></li>
+          <li><a href="#">联系我们</a></li>
+        </ul>
+        <ul>
+          <li class="khfw"><a href="#">客户服务</a></li>
+          <li class="gfwx"><a href="#">官方微信</a></li>
+          <li class="gfwb"><a href="#">官方微博</a></li>
+        </ul>
+      </div>
+      <div class="tel">
+        <h2>客服电话</h2>
+        <h3>4001234567</h3>
+        <b>9:00-21:00</b> </div>
+    </div>
+    <p>© 2014 合信生利 All rights reserved    合信生利信息科技有限公司   沪ICP证 145663号</p>
+  </div>
+
+</body>
+</html>

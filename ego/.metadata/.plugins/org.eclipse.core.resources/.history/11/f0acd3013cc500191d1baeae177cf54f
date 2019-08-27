@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<html>
+<%@ include file="common/base.jsp" %>
+  <body>
+	<%@ include file="common/header.jsp" %>  
+  <div class="topic-path">
+    <div class="inner clearfix">
+      <div class="topics-text">
+        <p><a href="/">TOP</a> &gt; 企业介绍</p>
+      </div>
+    </div>
+  </div>
+  <div class="headline">
+    <div class="title-box">
+      <div class="inner clearfix">
+        <h1 class="title">企业介绍</h1>
+        <p class="title-en">Company Info</p>
+      </div>
+    </div>
+  </div>
+  
+  <div id="company_tab" class="company">
+    <ul id="tab" class="clearfix">
+      <li class="select">公司信息</li>
+      <li class="">经营理念</li>
+      <li class="">团队介绍</li>
+      <li class="">企业公告</li>
+      <li class="">法律协议</li>
+      <li class="">招贤纳士</li>
+      <li class="last">联系我们</li>
+    </ul>
+  </div>
+
+  <div class="footer-content">
+    <div id="sitemap">
+      <div class="inner clearfix">
+        <p id="toTop"><a href="#topOfPage"><img src="${ctx}/img/common/btn_to_top_off.png" alt="PAGE UP"></a></p>
+        <ul class="link">
+          <li><a href="${ctx}/concept/index.html">中筹网金</a></li>
+          <li><a href="${ctx}/form/contact/">联系我们</a></li>
+          <li><a href="${ctx}/start/index.html">投资教室</a></li>
+          <li><a href="${ctx}/login/status_500.jsp">注册账户</a></li>
+          <li><a href="${ctx}/products/products.html">投资项目</a></li>
+          <li><a href="${ctx}/pdf/terms.pdf" target="_blank">使用协议</a></li>
+          <li><a href="${ctx}/faq/open.html">常见问题(Q&amp;A)</a></li>
+          <li><a href="${ctx}/contract/privacy.html">隐私保护</a></li>
+          <li><a href="${ctx}/company/data.html">企业介绍</a></li>
+          <li><a href="${ctx}/contract/account-relationship.html">合同协议</a></li>
+          <li><a href="${ctx}/systemrequirements/index.html">系统环境</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- end sitemap -->
+  </div>
+
+	<%@ include file="common/footer.jsp" %>
+  <script src="${ctx}/js/common.js" type="text/javascript"></script>
+  <script src="${ctx}/js/top.js" type="text/javascript"></script>
+  <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+</body>
+</html>

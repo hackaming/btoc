@@ -1,0 +1,68 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<div class="picbox">
+	<div id="marquee4">
+		<ul>
+			<li>
+				<div id="picb2" class="pic">
+					<img src="images/index_61.gif" width="243" height="223" />
+				</div>
+				<div id="picb7" class="pic">
+					<img src="images/index_67.gif" width="243" height="97" />
+				</div>
+			</li>
+			<li>
+				<div id="picb1" class="pic">
+					<img src="images/index_60.gif" width="370" height="172" />
+				</div>
+				<div id="picb5" class="pic">
+					<img src="images/index_65.gif" width="170" height="149" />
+				</div>
+				<div id="picb6" class="pic">
+					<img src="images/index_66.gif" width="197" height="149" />
+				</div>
+			</li>
+			<li>
+				<div id="picb3" class="pic">
+					<img src="images/index_62.gif" width="170" height="169" />
+				</div>
+				<div id="picb4" class="pic">
+					<img src="images/index_63.jpg" width="193" height="167" />
+				</div>
+				<div id="picb8" class="pic">
+					<img src="images/index_64.gif" width="373" height="150" />
+				</div>
+			</li>
+			<li>
+				sdfsf
+			</li>
+		</ul>
+	</div>
+	<div class="matter">
+		<h2>全新的投资理财方式</h2>
+		<i></i>
+		<div class="text">
+			<p>
+				预期投资回报率：<span>9%</span><br /> 实例开发商楼盘保值<span>增值</span><br />
+				第三方机构担保保证资金<span>安全</span><br /> <span>专业团队</span>为您选择产品
+			</p>
+			<a href="#"><img src="images/index_68.jpg" width="184"
+				height="84" /></a>
+		</div>
+		<a href="#"><img src="images/index_69.jpg" width="221"
+			height="59" /></a>
+	</div>
+</div>
+
+<div class="ask">
+	<ul>
+		<li class="marR"><img src="images/index_24.jpg" width="287"
+			height="162" />
+			<p>注册流程</p></li>
+		<li class="marR"><img src="images/index_24.jpg" width="287"
+			height="162" />
+			<p>投资教室</p></li>
+		<li><img src="images/index_24.jpg" width="287" height="162" />
+			<p>关于我们</p></li>
+	</ul>
+</div>

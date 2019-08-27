@@ -1,0 +1,17 @@
+/**
+ * 
+ */
+package com.ego.commons.pojo;
+
+import java.util.List;
+
+/**
+ * @author XYan
+ *
+ */
+public class EasyUIDataGrid {
+	private int rows;
+	private List<?> data;
+	
+
+}

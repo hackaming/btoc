@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.ego.pojo.TbItem"/>
+<fullyQualifiedTypeName name="com.ego.mapper.TbItemMapper"/>
+<fullyQualifiedTypeName name="com.github.pagehelper.PageHelper"/>
+<fullyQualifiedTypeName name="com.ego.pojo.TbItemExample"/>
+<fullyQualifiedTypeName name="com.github.pagehelper.PageInfo"/>
+<fullyQualifiedTypeName name="org.apache.log4j.chainsaw.Main"/>
+<fullyQualifiedTypeName name="com.alibaba.dubbo.container.Main"/>
+<fullyQualifiedTypeName name="javax.annotation.Resource"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="com.ego.commons.pojo.EasyUIDataGrid"/>
+<fullyQualifiedTypeName name="com.ego.dubbo.service.TbItemDubboService"/>
+<fullyQualifiedTypeName name="com.alibaba.dubbo.config.annotation.Reference"/>
+<fullyQualifiedTypeName name="com.ego.manage.service.TbItemService"/>
+<fullyQualifiedTypeName name="com.alibaba.dubbo.config.annotation.Service"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="org.apache.commons.mail.SimpleEmail"/>
+<fullyQualifiedTypeName name="org.apache.commons.mail.DefaultAuthenticator"/>
+<fullyQualifiedTypeName name="org.apache.commons.mail.Email"/>
+</qualifiedTypeNameHistroy>

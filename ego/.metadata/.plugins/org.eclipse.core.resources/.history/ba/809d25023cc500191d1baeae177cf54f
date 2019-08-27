@@ -1,0 +1,10 @@
+<form action ="http://mertest.chinapnr.com/muser/publicRequests" name="fff" id="fff" method="post">  
+<input name="Version" value="${params.Version}"/>
+<input name="CmdId" value="${params.CmdId}"/>
+<input name="MerCustId" value="${params.MerCustId}"/>
+<input name="UsrCustId" value="${params.UsrCustId}"/>
+<input name="ChkValue" value="${params.ChkValue}"/>
+</form>
+<script type="text/javascript">
+document.fff.submit();
+</script>

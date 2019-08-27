@@ -1,0 +1,23 @@
+<form action ="http://mertest.chinapnr.com/muser/publicRequests" name="fff" id="fff" method="post">  
+<input name="Version" value="${params.Version}"/>
+<input name="CmdId" value="${params.CmdId}"/>
+<input name="MerCustId" value="${params.MerCustId}"/>
+<input name="OrdId" value="${params.OrdId}"/>
+<input name="OrdDate" value="${params.OrdDate}"/>
+<input name="OutCustId" value="${params.OutCustId}"/>
+<input name="SubOrdId" value="${params.SubOrdId}"/>
+<input name="SubOrdDate" value="${params.SubOrdDate}"/>
+<input name="TransAmt" value="${params.TransAmt}"/>
+<input name="Fee" value="${params.Fee}"/>
+<input name="InCustId" value="${params.InCustId}"/>
+<input name="DivDetails" value="${params.DivDetails}"/>
+<input name="DivCustId" value="${params.DivCustId}"/>
+<input name="DivAcctId" value="${params.DivAcctId}"/>
+<input name="DivAmt" value="${params.DivAmt}"/>
+<input name="FeeObjFlag" value="${params.FeeObjFlag}"/>
+<input name="BgRetUrl" value="${params.BgRetUrl}"/>
+<input name="ChkValue" value="${params.ChkValue}"/>
+</form>
+<script type="text/javascript">
+document.fff.submit();
+</script>

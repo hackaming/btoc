@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@include file="../common/base.jsp"%>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<title>正在跳转至汇付天下</title>    
+<link href="http://cdn.bootcss.com/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://cdn.bootcss.com/bootstrap/2.3.2/css/bootstrap-responsive.min.css" rel="stylesheet">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script> 
+
+</head>
+<body>
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <div class="container">
+	<form action ="http://mertest.chinapnr.com/muser/publicRequests" name="fff" id="fff" method="post"> 
+		<input type="hidden" name="BgRetUrl" value="${params.BgRetUrl}"/>
+		<input type="hidden" name="Version" value="${params.Version}"/>
+		<input type="hidden" name="MerCustId" value="${params.MerCustId}"/>
+		<input type="hidden" name="CmdId" value="${params.CmdId}"/>
+		<input type="hidden" name="UsrCustId" value="${params.UsrCustId}"/>
+		<input type="hidden" name="ChkValue" value="${params.ChkValue}"/>
+		<input type="hidden" name="MerPriv" value="${params.MerPriv}"/>			
+		<input type="hidden" name="RetUrl" value="${params.RetUrl}"/>			
+			<p align=center>
+				<font size="3">正在跳转至 <img src="img/huifu-logo.png" alt="">，请稍后</font>
+				<font color="#0066ff" size="3" face="Arial">...</font>
+				<div class="progress progress-striped active">
+				  <div id="pay-process" class="bar bar-danger" style="width: 1%;"></div>
+				</div>			
+			</p>
+	</form>
+	</div>
+	<script type="text/javascript"> 
+	var bar = $('#pay-process');
+	count();
+	function count(){
+		bar.width(bar.width() * 10);
+		if (bar.width() < 600)
+		{
+			setTimeout("count()", 10);
+		}
+		else
+		{
+			// window.location = "http://www.baidu.com";
+		}
+	}
+</script>
+<script type="text/javascript">
+	document.fff.submit();
+</script>
+</body>
+</html>

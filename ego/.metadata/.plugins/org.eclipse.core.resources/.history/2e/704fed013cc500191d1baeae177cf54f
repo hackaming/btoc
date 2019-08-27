@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<html>
+<%@ include file="common/base.jsp" %>
+  <body>
+	<%@ include file="common/header.jsp" %>  
+  <div class="topic-path">
+    <div class="inner clearfix">
+      <div class="topics-text">
+        <p><a href="${ctx}/" id="topOfPage">TOP</a> &gt; 投资教室</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="start">
+    <div id="main">
+      <h2>投资教室 在这里将引导你开始你的投资之旅</h2>
+      <div id="b01">
+        <img src="${ctx}/img/start/main-head.png" alt=""><p></p>
+      </div>
+
+      <ul id="b02">
+        <li id="step01"><a href="#step02"></a><img src="${ctx}/img/start/step01.png" alt="会员登录"></li>
+        <li id="step02"><a href="#step03"></a><img src="${ctx}/img/start/step02.png" alt=""></li>
+        <li id="step03"><a href="#step04"></a><img src="${ctx}/img/start/step03.png" alt=""></li>
+        <li id="step04"><a href="#step05"></a><img src="${ctx}/img/start/step04.png" alt=""></li>
+        <li id="step05"><a href="#step06"></a><img src="${ctx}/img/start/step05.png" alt=""></li>
+        <li id="step06"><img src="${ctx}/img/start/step06.png" alt=""></li>
+      </ul>
+
+      <div class="box" id="b03">
+        <img src="${ctx}/img/start/txt10.png" alt="">
+      </div>
+
+      <p id="p01">
+        <a href="${basePath}reg"><img class="oc" src="${ctx}/img/start/btn01.png" alt=""></a>
+      </p>
+    </div><!-- end main -->
+
+</div>
+  
+  <div class="footer-content">
+    <div id="sitemap">
+      <div class="inner clearfix">
+        <p id="toTop"><a href="#topOfPage"><img src="${ctx}/img/common/btn_to_top_off.png" alt="PAGE UP"></a></p>
+        <ul class="link">
+          <li>
+                  <a href="${ctx}/cncrowd">
+                    中筹网金
+                  </a>
+                </li>
+                <li>
+                  <a href="#footer">
+                    联系我们
+                  </a>
+                </li>
+                <li>
+                  <a href="${ctx}/howto">
+                    投资教室
+                  </a>
+                </li>
+                <li>
+                  <a href="${ctx}/reg">
+                    注册账户
+                  </a>
+                </li>
+                <li>
+                  <a href="${ctx}/items">
+                    投资项目
+                  </a>
+                </li>
+                <li>
+                  <a href="${ctx}/faq">
+                    常见问题(Q&amp;A)
+                  </a>
+                </li>
+                <li>
+                  <a href="${ctx}/company?id=1">
+                    企业介绍
+                  </a>
+                </li>
+                <li>
+                  <a href="${ctx}/company?id=5">
+                    法律协议
+                  </a>
+                </li>
+        </ul>
+      </div>
+    </div>
+    <!-- end sitemap -->
+  </div>
+  <%@ include file="common/footer.jsp" %>
+  <script src="${ctx}/js/common.js" type="text/javascript"></script>
+  <script language="javascript" type="text/javascript" src="${ctx}/js/concept.js"></script>
+  <script src="${ctx}/js/start.js" type="text/javascript"></script>
+</body>
+</html>

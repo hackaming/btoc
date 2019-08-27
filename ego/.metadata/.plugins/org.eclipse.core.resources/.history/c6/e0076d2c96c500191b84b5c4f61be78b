@@ -1,0 +1,5 @@
+package com.ego.manage.service;
+
+public class TbItemService {
+	public EasyUIDataGrid show(int page,int rows);
+}

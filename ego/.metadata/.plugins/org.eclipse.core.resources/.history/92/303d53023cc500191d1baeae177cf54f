@@ -1,0 +1,282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%
+	String path = request.getContextPath();
+	String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>合信生利</title>
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/xxk.js"></script>
+</head>
+<body>
+<div id="wrap">
+  <div id="header">
+    <div class="money">
+      <h2>累计融资金额:</h2>
+      <p>32,400,000</p>
+    </div>
+    <div class="wx">
+      <p>合信生利微信</p>
+    </div>
+    <div class="menu"> <a href="#"><img src="images/index_52.jpg" width="91" height="47" /></a><a href="#"><img src="images/index_53.jpg" width="109" height="47" /></a><a href="#"><img src="images/index_54.jpg" width="92" height="47" /></a><a href="#"><img src="images/index_55.jpg" width="96" height="47" /></a><a href="#"><img src="images/index_56.jpg" width="132" height="47" /></a><a href="#"><img src="images/index_57.jpg" width="97" height="47" /></a></div>
+    <div class="login"><a href="#" class="red">>登录</a><a href="#" class="red">>注册</a><a href="#" class="red">>企业入口</a></div>
+  </div>
+  <div id="content">
+    <div id="Tab4">
+      <div class="Menubox4">
+        <ul>
+          <li id="four1" onmouseover="setTab('four',1,2)"  class="hover">转让中心</li>
+          <li id="four2" onmouseover="setTab('four',2,2)">投资者看房活动预约</li>
+        </ul>
+      </div>
+      <div class="Contentbox4">
+        <div id="con_four_1"  class="hover">
+          <div class="activity">
+            <ul>
+              <li class="libor">
+                <div class="lef fl"><img src="images/main_14.jpg" width="239" height="123" /></div>
+                <div class="rig fr">
+                  <p>项目名称：首创青旅岛尚</p>
+                  <p>项目编号：0123</p>
+                  <p>活动日期：2014.5.6-2014.5.7</p>
+                  <p>活动内容：45平方公里国际旅居区 长三角首座世界养生圣地他表示华为需要思想家和战略</p>
+                  <div> <a class="affirm" href="#">预约</a></div>
+                </div>
+              </li>
+              <li class="libor">
+                <div class="lef fl"><img src="images/main_14.jpg" width="239" height="123" /></div>
+                <div class="rig fr">
+                  <p>项目名称：首创青旅岛尚</p>
+                  <p>项目编号：0123</p>
+                  <p>活动日期：2014.5.6-2014.5.7</p>
+                  <p>活动内容：45平方公里国际旅居区 长三角首</p>
+                  <div> <a class="affirm" href="#">预约</a></div>
+                </div>
+              </li>
+              <li class="libor">
+                <div class="lef fl"><img src="images/main_14.jpg" width="239" height="123" /></div>
+                <div class="rig fr">
+                  <p>项目名称：首创青旅岛尚</p>
+                  <p>项目编号：0123</p>
+                  <p>活动日期：2014.5.6-2014.5.7</p>
+                  <p>活动内容：45平方公里国际旅居区 </p>
+                  <div> <a class="affirm" href="#">预约</a></div>
+                </div>
+              </li>
+              <li>
+                <div class="lef fl"><img src="images/main_14.jpg" width="239" height="123" /></div>
+                <div class="rig fr">
+                  <p>项目名称：首创青旅岛尚</p>
+                  <p>项目编号：0123</p>
+                  <p>活动日期：2014.5.6-2014.5.7</p>
+                  <p>活动内容：45平方公里国际旅居区 </p>
+                  <div> <a class="affirm" href="#">预约</a></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="con_four_2" style="display:none;">
+          <div class="market">
+            <h2>转让中心总金额：2,500，500<br />
+              转让中心历史转让金额：1，500，500</h2>
+            <div class="search1">
+              <input name="" type="text" />
+              <a href="#" class="affirm fl">搜索</a></div>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="30" align="center" class="tdline"><span>产品名</span></td>
+                <td align="center" class="tdline"><span>产品号</span></td>
+                <td align="center" class="tdline"><span>转让者</span></td>
+                <td align="center" class="tdline"><span>转让份数</span></td>
+                <td align="center" class="tdline"><span>转让单价</span></td>
+                <td align="center" class="tdline"><span>市场价格</span></td>
+                <td align="center" class="tdline"><span>产品到期时间</span></td>
+                <td align="center" class="tdline"><span>操作</span></td>
+              </tr>
+              <tr>
+                <td>首创青旅岛尚首创青旅岛尚....</td>
+                <td align="center">0213</td>
+                <td align="center">ma***dan</td>
+                <td align="center">1</td>
+                <td align="center">1200</td>
+                <td align="center">1300</td>
+                <td align="center">2017.5.6</td>
+                <td align="center"><a href="#">查看</a>/<a href="#">接手</a></td>
+              </tr>
+              <tr>
+                <td>首创青旅青岛尚....</td>
+                <td align="center">0213</td>
+                <td align="center">ma***dan</td>
+                <td align="center">1</td>
+                <td align="center">1200</td>
+                <td align="center">1300</td>
+                <td align="center">2017.5.6</td>
+                <td align="center"><a href="#">查看</a>/<a href="#">接手</a></td>
+              </tr>
+              <tr>
+                <td>首创青旅岛尚....</td>
+                <td align="center">0213</td>
+                <td align="center">ma***dan</td>
+                <td align="center">1</td>
+                <td align="center">1200</td>
+                <td align="center">1300</td>
+                <td align="center">2017.5.6</td>
+                <td align="center"><a href="#">查看</a>/<a href="#">接手</a></td>
+              </tr>
+              <tr>
+                <td>首创青旅岛尚....</td>
+                <td align="center">0213</td>
+                <td align="center">ma***dan</td>
+                <td align="center">1</td>
+                <td align="center">1200</td>
+                <td align="center">1300</td>
+                <td align="center">2017.5.6</td>
+                <td align="center"><a href="#">查看</a>/<a href="#">接手</a></td>
+              </tr>
+              <tr>
+                <td>首创青旅岛尚....</td>
+                <td align="center">0213</td>
+                <td align="center">ma***dan</td>
+                <td align="center">1</td>
+                <td align="center">1200</td>
+                <td align="center">1300</td>
+                <td align="center">2017.5.6</td>
+                <td align="center"><a href="#">查看</a>/<a href="#">接手</a></td>
+              </tr>
+              <tr>
+                <td>首创青旅岛尚....</td>
+                <td align="center">0213</td>
+                <td align="center">ma***dan</td>
+                <td align="center">1</td>
+                <td align="center">1200</td>
+                <td align="center">1300</td>
+                <td align="center">2017.5.6</td>
+                <td align="center"><a href="#">查看</a>/<a href="#">接手</a></td>
+              </tr>
+              <tr>
+                <td>首创青旅岛尚....</td>
+                <td align="center">0213</td>
+                <td align="center">ma***dan</td>
+                <td align="center">1</td>
+                <td align="center">1200</td>
+                <td align="center">1300</td>
+                <td align="center">2017.5.6</td>
+                <td align="center"><a href="#">查看</a>/<a href="#">接手</a></td>
+              </tr>
+              <tr>
+                <td>首创青旅岛尚....</td>
+                <td align="center">0213</td>
+                <td align="center">ma***dan</td>
+                <td align="center">1</td>
+                <td align="center">1200</td>
+                <td align="center">1300</td>
+                <td align="center">2017.5.6</td>
+                <td align="center"><a href="#">查看</a>/<a href="#">接手</a></td>
+              </tr>
+              <tr>
+                <td>首创青旅岛尚....</td>
+                <td align="center">0213</td>
+                <td align="center">ma***dan</td>
+                <td align="center">1</td>
+                <td align="center">1200</td>
+                <td align="center">1300</td>
+                <td align="center">2017.5.6</td>
+                <td align="center"><a href="#">查看</a>/<a href="#">接手</a></td>
+              </tr>
+              <tr>
+                <td>首创青旅岛尚....</td>
+                <td align="center">0213</td>
+                <td align="center">ma***dan</td>
+                <td align="center">1</td>
+                <td align="center">1200</td>
+                <td align="center">1300</td>
+                <td align="center">2017.5.6</td>
+                <td align="center"><a href="#">查看</a>/<a href="#">接手</a></td>
+              </tr>
+              <tr>
+                <td>首创青旅岛尚....</td>
+                <td align="center">0213</td>
+                <td align="center">ma***dan</td>
+                <td align="center">1</td>
+                <td align="center">1200</td>
+                <td align="center">1300</td>
+                <td align="center">2017.5.6</td>
+                <td align="center"><a href="#">查看</a>/<a href="#">接手</a></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div class="link">
+      <div class="fd">
+        <ul>
+          <li><a href="#">公司介绍</a></li>
+          <li><a href="#">合信生利</a></li>
+          <li><a href="#">媒体报道</a></li>
+          <li><a href="#">团队介绍</a></li>
+          <li><a href="#">投资计算器</a></li>
+          <li><a href="#">招贤纳士</a></li>
+          <li><a href="#">联系我们</a></li>
+        </ul>
+        <ul>
+          <li class="khfw"><a href="#">客户服务</a></li>
+          <li class="gfwx"><a href="#">官方微信</a></li>
+          <li class="gfwb"><a href="#">官方微博</a></li>
+        </ul>
+      </div>
+      <div class="tel">
+        <h2>客服电话</h2>
+        <h3>4001234567</h3>
+        <b>9:00-21:00</b> </div>
+    </div>
+    <p>© 2014 合信生利 All rights reserved    合信生利信息科技有限公司   沪ICP证 145663号</p>
+  </div>
+</div>
+</body>
+</html>
+  <div id="footer">
+    <div class="link">
+      <div class="fd">
+        <ul>
+          <li><a href="#">公司介绍</a></li>
+          <li><a href="#">合信生利</a></li>
+          <li><a href="#">媒体报道</a></li>
+          <li><a href="#">团队介绍</a></li>
+          <li><a href="#">投资计算器</a></li>
+          <li><a href="#">招贤纳士</a></li>
+          <li><a href="#">联系我们</a></li>
+        </ul>
+        <ul>
+          <li class="khfw"><a href="#">客户服务</a></li>
+          <li class="gfwx"><a href="#">官方微信</a></li>
+          <li class="gfwb"><a href="#">官方微博</a></li>
+        </ul>
+      </div>
+      <div class="tel">
+        <h2>客服电话</h2>
+        <h3>4001234567</h3>
+        <b>9:00-21:00</b> </div>
+    </div>
+    <p>© 2014 合信生利 All rights reserved    合信生利信息科技有限公司   沪ICP证 145663号</p>
+  </div>
+</div>
+</body>
+<script src="js/jquery-2.0.3.min.js"></script>
+<script src="js/oip.js"></script>
+</html>

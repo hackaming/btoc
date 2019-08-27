@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<html>
+<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	if("${id}" == 1) {
+		$("#company1").addClass("hover");
+	}
+	if("${id}" == 2) {
+		$("#company2").addClass("hover");
+	}
+	if("${id}" == 3) {
+		$("#company3").addClass("hover");
+	}
+	if("${id}" == 4) {
+		$("#company4").addClass("hover");
+	}
+	if("${id}" == 5) {
+		$("#company5").addClass("hover");
+	}
+});
+</script>
+<%@ include file="../common/base.jsp" %>
+  <body>
+	<%@ include file="../common/header.jsp" %>  
+  <div class="topic-path">
+    <div class="inner clearfix">
+      <div class="topics-text">
+        <p><a href="/" id="topOfPage">TOP</a> &gt; 企业介绍</p>
+      </div>
+    </div>
+  </div>
+  <div class="headline">
+    <div class="title-box">
+      <div class="inner clearfix">
+        <h1 class="title">企业介绍</h1>
+        <p class="title-en">Company Info</p>
+      </div>
+    </div>
+  </div>
+ 
+  <div id="company_tab" class="company">
+    <ul id="tab" class="clearfix">
+      <li id="company1" onclick="setTab('company',1,6)" class="">公司信息</li>
+      <li id="company2" onclick="setTab('company',2,6)" class="">经营理念</li>
+      <li id="company3" onclick="setTab('company',3,6)" class="">团队介绍</li>
+      <li id="company4" onclick="setTab('company',4,6)" class="">企业公告</li>
+      <li id="company5" onclick="setTab('company',5,6)" class="">法律协议</li>
+      <li id="company6" onclick="setTab('company',6,6)" class="">招贤纳士</li>
+    </ul>
+  </div>
+   
+<!-- 公司简介 -->
+<div id="con_company_1" class="content hover">
+  <div class="conts cf seminar">
+    <div class="contMain">
+      <section class="wrap mgn-btm">
+        <table class="table-std">
+          <tbody>
+            <tr>
+              <th>
+                <span>
+                  公司名
+                </span>
+              </th>
+              <td>
+                中筹（上海）互联网金融有限公司
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <span class="height1">
+                  所在地
+                </span>
+              </th>
+              <td>
+                <p class="text box">
+                  200052
+                  <br>
+                  上海市长宁区延安西路1118号龙之梦大厦2202室
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <span>
+                  联系方式
+                </span>
+              </th>
+              <td>
+                TEL: （021）6181-3682&#12288;FAX: （021）6181-3683
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <span class="height2">
+                  团队
+                </span>
+              </th>
+              <td>
+                <table class="table-std">
+                  <tbody>
+                    <tr>
+                      <td>
+                        创始人、执行董事、总裁
+                      </td>
+                      <td>
+                        唐人
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <span>
+                  注册资本
+                </span>
+              </th>
+              <td>
+                111,597,750元
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </div>
+</div>
+
+<!-- 经营理念  -->
+<div id="con_company_2" class="content" style="display:none">
+  <div class="conts cf seminar">
+    <div class="contMain">
+      <section>
+        <div class="wrap">
+          <p class="box"><img alt="" src="/img/company/philosophy001.gif"></p>
+        </div>
+        <div class="wrap mgn-btm">
+          <h1 class="title boxs">普惠金融的创导者  不动产投资的开拓者<br>改变中国6.6亿人对房地产的投资行为</h1>
+          <p class="text">中筹网金（www.cncrowd.com），隶属于中筹（上海）互联网金融有限公司，为全国首家房地产众筹网络平台。旨在改变中国6.6亿人投资房地产行为，影响甚至主导中国房地产业的发展。</p>
+          <p class="text">中筹网金以房地产为核心，左拓互联网行业右进金融领域、前伸地产商后延金融草根，通过众筹方式+“百元即可投资房地产”的低门槛，与高端地产投资形成互补，覆盖上班族、月光族、裸婚族等人群，为社会更多阶层和群体提供投资房地产金融服务。</p>
+          <p class="text">平台将国外多年的房地产众筹经验本地化，持续自主创新，以“普惠金融 和谐共富”为己任，深耕垂直细分领域，跨越空间局限，覆盖更广泛人群；超越阶层限制，百元即可参与众筹；让金融草根、投资小白也能从房地产发展中获得收益，共享金融改革红利。</p>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<!-- 风控团队  -->
+<div id="con_company_3" class="content" style="display:none">
+  <div class="conts cf member">
+    <div class="contMain">
+        <div class="wrap">
+          <div class="title-box">
+            <h1 class="title boxs">风控智囊团・平台投资决策小组</h1>
+            <p>线下强大的明星专业团队  360°为投资人利益保驾护航<br>
+                                                    全面把控法律、评估、资管、中介合作等领域的风控
+            </p>
+          </div>
+          <div class="member-wrap">
+            <div class="member-box left">
+              <p class="name-eng">GONG GANG</p>
+              <p class="name">龚刚</p>
+              <p class="ph"><img alt="" src="/img/company/membar_ph001.jpg"></p>
+              <p class="role">地产基金&小组长</p>
+              <p class="career">北京及天津的投资公司和基金公司的创始人及管理人，22年国内及海外10多个国家房地产及金融投资和管理经验；<br>
+国内最大私募股权基金鼎晖投资地产基金的创始合伙人，在近四年的时间里把鼎晖的地产基金及投资业务从零做大到几十亿，最早发起并成功募集国内第一家正规的大型房地产投资基金。<br>
+
+华尔街大型对冲基金高桥资本的不动产及特殊机会投资业务的中国区总经理，早期地把对冲基金的概念、投资和运作及特殊机会房地产投资的理念和实践带到中国。<br>
+
+在国内，成功投资、开发和管理了多个从最南（三亚清水湾45万平米海滨一线项目阿罗哈）到最北（哈尔滨48层中山国际）的地标及市场标杆性项目，曾任和现任国内50多家地产投资及开发公司、基金及管理公司的法人代表、董事长、执行董事等。<br>
+
+美国通用电气总部金融和房地产业务全球高级经理特招人才，在美洲、欧洲、亚洲的十多个国家工作过十年，为通用电气资本公司全球地产及特殊机会投资部的创始人之一，领队主导了多个美国国内银行资产和地产项目的整体收购，投资并管理了百亿美元的全球资产组合及配置。是美国、中国和十多个国家的特殊机会不动产、不良资产投资、处置和管理方面的专家。<br>
+
+九十年代初为日本三和银行（现东京三菱银行）上海及香港分行信贷及项目投资部经理，参与大规模投资国内金融机构（包括银行和信托投资公司等）、航空公司、高速公路等基础设施、国家主要工业产业（石化、钢铁、航运等）、及大中型外商投资企业的投资和贷款。
+              </p>
+            </div>
+            <div class="member-box center">
+              <p class="name-eng">ZHOU XUE SHUANG</p>
+              <p class="name">周雪爽</p>
+              <p class="ph"><img alt="" src="/img/company/membar_ph002.jpg"></p>
+              <p class="role">法律达人</p>
+              <p class="career">上海华诚律师事务所合伙人，毕业于上海大学法学院（现为上海政法学院），此后先后供职于国有企业和外资企业担任法律顾问。丰富的公司法务实际经验，在不同企业从事法律服务的实践经验，在为不同公司服务过程中，具备了丰富的公司管理、合同纠纷、劳动纠纷处理的经验，并取得相当成绩。<br>
+同时作为地产方面的律师，为众多当事人保障地产交易安全提供了专业服务。所代理的地产交易案件保障了当事人的合法权益。
+</p>
+            </div>
+            <div class="member-box right">
+              <p class="name-eng">LI MING</p>
+              <p class="name">李明</p>
+              <p class="ph"><img alt="" src="/img/company/membar_ph003.jpg"></p>
+              <p class="role">评估达人</p>
+              <p class="career">沪港国际咨询集团有限公司由上海沪港建设咨询有限公司、上海沪港金茂会计师事务所有限公司、上海沪港资产评估有限责任公司、上海沪港房地产估价有限公司、上海沪港项目投资咨询有限公司、上海建设审计进修学院等单位组建而成的集团型中介组织。具有工程造价咨询甲级资质、招标代理甲级资质、工程咨询甲级资质、上海市政府采购招标甲级资质、司法审计等资质。<br>
+上海沪港金茂会计师事务所有限公司：具有上海市财政局国有大中型企业审计资质、上海市财政局注册会计师执业资质、上海市司法局司法审计资质、中国人民银行地方金融机构审计等资质。<br>
+上海沪港资产评估有限责任公司、上海沪港房地产估价有限公司：具有上海市资产评估资质、上海市房地局房地产一级评估资质。
+</p>
+            </div>
+          <div class="member-wrap">
+            <div class="member-box left">
+              <p class="name-eng">XIE MENG HU</p>
+              <p class="name">谢猛虎</p>
+              <p class="ph"><img alt="" src="/img/company/membar_ph004.jpg"></p>
+              <p class="role">资管达人</p>
+              <p class="career">负责前期项目拓展，资管公司物业管理和增值运营，曾就职于上海瑞铂商业集团公司，长期从事商业类地产（写字楼，商铺）和工业地产的投资咨询，代理，交易，顾问等服务工作。<br>
+瑞铂集团旗下上海黑火房地产代理有限公司，上海立超房地产顾问有限公司，上海立超物业管理有限公司，上海金豫百货有限公司，上海铂盛酒店管理有限公司，历任写字楼部经理，08年成立工业地产部兼任副总监。12年后成为上海沪港咨询集团下属上海璨石资产管理有限公司事业合伙人，专注于整合资源，为银行，信托，基金公司，政府等部门进行房地产方面的全产业链服务。包括存量资产，不良资产的盘活，处置，评估，融资等。
+</p>
+            </div>
+            <div class="member-box center">
+              <p class="name-eng">TANG ZHENG DONG</p>
+              <p class="name">唐振东</p>
+              <p class="ph"><img alt="" src="/img/company/membar_ph005.jpg"></p>
+              <p class="role">中介合作</p>
+              <p class="career">中原地产上海公司副总经理，上海工程技术大学管理学院工商管理系,管理学学士。<br>
+1996年加入上海中原国际房地产代理有限公司，1999年加入上海中原物业代理有限公司。<br>
+数十年实战工作积累丰富大盘操作经验。先后建立中原地产研究、中原地产咨询以及中原地产代理等系列品牌。
+</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+   
+   
+   
+   
+<!-- 公告  -->
+<div id="con_company_4" class="content" style="display:none">
+  <div class="conts cf ir">
+    <div class="wrap mgn-btm">
+        <section class="box">
+        <div class="title-box">
+          <h1 class="title">行业动态</h1>
+          <p class="eng">Statement of Accounts</p>
+        </div>
+        <ul>
+          <li><p><strong>2014年度 &nbsp; </strong>2014.08.21 &nbsp; <a target="_blank" href="#">标题标题标题标题标题标题标题标题标题标题</a></p></li>
+          <li><p><strong>2013年度 &nbsp; </strong>2014.05.27 &nbsp; <a target="_blank" href="#">标题标题标题标题标题标题标题标题</a></p></li>
+         
+        </ul>
+      </section>
+      <section class="box">
+        <div class="title-box">
+          <h1 class="title">公司公告</h1>
+          <p class="eng">Electronic Public Notice</p>
+        </div>
+        <ul>
+          <li><p><strong>2014年度 &nbsp; </strong>2014.09.10 &nbsp; <a target="_blank" href="#">标题标题标题标题标题标题标题标题</a></p></li>
+          <li><p><strong>2014年度 &nbsp; </strong>2014.08.25 &nbsp; <a target="_blank" href="#">标题标题标题标题标题标题标题标题标题标题</a></p></li>
+          
+        </ul>
+      </section>
+    </div>
+  </div>
+</div>
+
+
+<!-- 法律   -->
+<div id="con_company_5" class="content" style="display:none">
+  <div class="conts cf seminar">
+    <div class="contMain">
+      <section>
+        <div class="wrap">
+          <p class="box"><img alt="" src="/img/company/philosophy001.gif"></p>
+        </div>
+        <div class="wrap mgn-btm">
+          <h1 class="title boxs">平台提供居间撮合服务的合法性<br>
+<span style=" font-size:12px">--中华人民共和国《合同法》</span>
+</h1>
+          <p class="text">&nbsp;&nbsp;根据《合同法》第11条的规定：书面形式是指合同书、信件和数据电文（<span style="color:red">包括电报、电传、传真、电子数据交换和电子邮件</span>）等可以有形地表现所载内容的形式。<br>
+《合同法》第23章专门对“居间合同”作出规定：第四百二十四条  居间合同是居间人向委托人报告订立合同的机会或者提供订立合同的媒介服务，委托人支付报酬的合同。<br>
+第四百二十六条  居间人促成合同成立的，委托人应当按照约定支付报酬。对居间 人的报酬没有约定或者约定不明确，依照本法第六十一条的规定仍不能确定的，根据 居间人的劳务合理确定。<br>
+<span style="color:red">因居间人提供订立合同的媒介服务而促成合同成立的，由该合同的当事人平均负担居间人的报酬。</span>居间人促成合同成立的，居间活动的费用，由居间人负担。<br>
+<br>
+来源：http://www.gov.cn/banshi/2005-07/11/content_13695.htm
+</p><br>
+          <p class="text">中华人民共和国《合伙企业法》<br>
+第六十一条 有限合伙企业由二个以上五十个以下合伙人设立；但是，法律另有规定的除外。有限合伙企业至少应当有一个普通合伙人。<br>
+第六十七条 有限合伙企业由普通合伙人执行合伙事务。执行事务合伙人可以要求在合伙协议中确定执行事务的报酬及报酬提取方式。<br>
+第八十五条 合伙企业有下列情形之一的，应当解散：<br>
+（一）合伙期限届满，合伙人决定不再经营；<br>
+（二）合伙协议约定的解散事由出现；<br>
+（三）全体合伙人决定解散；<br>
+（四）合伙人已不具备法定人数满三十天；<br>
+（五）合伙协议约定的合伙目的已经实现或者无法实现；<br>
+（六）依法被吊销营业执照、责令关闭或者被撤销；<br>
+（七）法律、行政法规规定的其他原因。<br>
+<br>
+ 来源：http://www.gov.cn/flfg/2006-08/28/content_371399.htm
+</p><br>
+          <p class="text">最高人民法院关于适用《中华人民共和国公司法》<br>
+第二十四条 有限责任公司的实际出资人与名义出资人订立合同，约定由实际出资人出资并享有投资权益，以名义出资人为名义股东，实际出资人与名义股东对该合同效力发生争议的，如无合同法第五十二条规定的情形，人民法院应当认定该合同有效。<br>
+前款规定的实际出资人与名义股东因投资权益的归属发生争议，实际出资人以其实际履行了出资义务为由向名义股东主张权利的，人民法院应予支持。名义股东以公司股东名册记载、公司登记机关登记为由否认实际出资人权利的，人民法院不予支持。<br>
+实际出资人未经公司其他股东半数以上同意，请求公司变更股东、签发出资证明书、记载于股东名册、记载于公司章程并办理公司登记机关登记的，人民法院不予支持。<br>
+<br>
+来源：http://www.npc.gov.cn/wxzl/wxzl/2000-12/05/content_4608.htm
+
+</p><br>
+
+<p class="text">最高人民法院审判委员会<br>
+《最高人民法院关于审理非法集资刑事案件<br>
+具体应用法律若干问题的解释》 <br>
+“股权众筹”会触及公开发行证券或“非法集资”红线的风险。《最高人民法院关于审理非法集资刑事案件具体应用法律若干问题的解释》就“非法吸收公众存款或者变相吸收公众存款”从四个方面作出了明确界定：<br>
+	未经有关部门依法批准或者借用合法经营的形式吸收资金；<br>
+	通过媒体、推介会、传单、手机短信等途径向社会公开宣传；<br>
+	承诺在一定期限内以货币、实物、股权等方式还本付息或者给付回报；<br>
+	向社会公众即社会不特定对象吸收资金。<br><br>
+来源：http://www.mps.gov.cn/n16/n1282/n3493/n3838/2921956.html<br>
+<br>
+针对法律风险，我们采取以下防范措施加以规避:<br>
+对象的特定性<br>
+向社会公众即社会特定对象吸收资金。通过向会员短信确认、电话确认过的特定对象等，可以通过邀请特定用户线下沟通然后决定是否投资的模式。在线上展示项目信息，与潜在投资人达成意向后，操作转入线下，按照《公司法》等法规规定进行股权投资操作。股份的转让以增资扩股的方式由企业和投资人直接协调，理论上则不涉及股票发行。<br>
+集资手段的不公开性<br>
+资金的募集方式不会通过媒体、推介会、传单、手机短信等途径向社会公开宣传，需向特定的有投资风险辨别能力的人募集，所有参与众筹者都与本平台签署过服务协议的注册会员。<br>
+募集人数限制<br>
+以股份有限公司形式设立的，募集人数不得超过200人；以有限公司形式设立的，募集人数不得超过50人；建议集资人数不要超过200人。如果集资人数大于200人，建议用代持或设立多个有限合伙企业形式来规避。<br>
+不要承诺固定收益<br>
+承诺固定收益的一种表现形式是保本付息，是否签订了保本付息条款是认定是否构成非法集资的主要认定标准。保本付息业务只有人民银行批准的金融机构才能开展，一般机构是无权向客户做这一承诺的。<br>
+<br>
+<span style="float:right">中筹网金<br> 
+2014.09.30</p></span>
+
+
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- 招聘  -->
+<div id="con_company_6" class="content" style="display:none">
+  <div class="conts cf seminar">
+    <div class="contMain">
+      <section class="wrap mgn-btm">
+        <table class="table-std">
+          <tbody>
+            <tr>
+              <th>
+                <span>
+                Java网站程序员
+                </span>
+              </th>
+              <td>
+                【职位月薪】：面议<br>
+【工作性质】：全职<br>
+【工作经验】：不限<br>
+【最低学历】：本科<br>
+【招聘人数】：若干 <br>
+【职位类别】：高级软件工程师<br>
+<br>
+
+【岗位职责】：<br>
+1. 参与公司项目、产品的设计、研发和系统维护。<br>
+2. 根据详细设计和开发规范进行编码，实现相关的功能，做好相应的单元测试；<br>
+3. 做事认真仔细，有很强的责任心；<br>
+4. 善于沟通，工作主动，富有团队精神；<br>
+5. 有耐心，具有钻研进取精神和较强的学习能力；<br>
+<br>
+【任职要求】：<br>
+1、java实际开发经验2年以上；<br> 
+2、熟练掌握Java、JS等语言，熟悉Apache，Jboss，Tomcat；<br>
+3、对网络协议有较深的理解，熟悉JRE运行机制，熟悉JAVA开发运行环境搭建；<br>
+4、熟悉使用Netbeans,Eclipse等IDE与各类SVN,CVS等版本控制软件使用；<br>
+5、熟悉各类JAVA设计模式，熟悉使用UML设计；<br>
+6、精通SQL语言，熟悉MySQL、SQLServer或Oracle数据库；<br>
+7、精通Struts，Hibernate，Spring，Webwork等MVC或ORM apping框架；<br>
+8、熟悉软件开发技术文档资料的编写规范,有良好的写作能力与测试能力；<br>
+9、有互联网金融行业开发经验者优先考虑。<br>
+<br>
+简历请发送至：zw@cncrowd.com<br>
+
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <span class="height1">
+                                                   网络推广
+                </span>
+              </th>
+              <td>
+【职位月薪】：6001-8000元月<br>
+【工作性质】：全职<br>
+【工作经验】：1-3年<br>
+【最低学历】：大专<br>
+【招聘人数】：1人 <br>
+【职位类别】：销售代表<br>
+<br>
+
+【岗位职责】：<br>
+1、岗位核心目标：带领推广团队员工，研究分析全网各种推广手段，为平台网站引入优质流量；<br>
+2、结合整体运营计划分析制定公司月度、周度网络推广计划；<br>
+3、结合整体运营策略分析制定各推广渠道的月度、周度推广策略；<br>
+4、指导各方向专员优化日常操作策略 ；收口类（百度、seo、sns）展示类（硬广、DSP等）；<br>
+5、定期分析推广方向的数据，监控评估推广效果；<br>
+6、对全网的新的推广营销方式进行培训；<br>
+7、带领推广专员不断总结各推广方向操作技巧，并形成方法论文件；<br>
+ <br>
+【任职要求】：<br>
+1、两年以上网络推广工作经验，电商类平台优先；<br>
+2、本科及以上学历；<br>
+3、至少对两种网络推广方式非常熟练应用；<br>
+4、熟悉电商的运营推广模式；<br>
+5、较好的学习能力和习惯；<br>
+6、数据分析能力。<br>
+
+               
+              </td>
+            </tr>
+            
+             
+            
+          
+            <tr>
+              <th>
+                <span>
+                  税务会计
+                </span>
+              </th>
+              <td>
+ 
+【职位月薪】：6001-8000元/月<br>
+【工作性质】：全职<br>
+【工作经验】：1-3年<br>
+【最低学历】：不限<br>
+【招聘人数】：1人 <br>
+<br>
+【岗位职责】：<br>
+1、针对互联网金融企业的税务问题设计和处理。<br>
+2、遵照发票管理制度，结合公司经营情况，进行发票的申请、增量、领用、开具及留存管理；<br>
+3、负责月度、年度纳税申报，依据业务发展情况和运营数据，进行税赋预测和筹划，并提出合理化建议；<br>
+4、配合年度涉税业务审计和日常税务检查，编制税务报告和涉税文书，规范公司涉税事项的核算和管理流程；<br>
+5、建立良好的税务关系，遇到问题实现有效沟通，降低企业风险，及时反馈税务新政策和税收优惠信息。<br>
+ <br>
+【任职资格】：<br>
+1、专科及以上学历，会计、财务管理、税务等专业；<br>
+2、从事税务专员或税务会计工作两年以上，熟悉各项涉税事务的具体操作流程；<br>
+3、熟悉并了解国家及地方的财务、税务相关政策和税收优惠政策，对税务风险有一定认识；<br>
+4、工作有责任心、主动性和计划性，有独立处理事务的能力；<br>
+5、熟悉WORD、EXCEL等办公软件以及金蝶、用友等财务软件的操作；<br>
+6、有互联网企业税务管理工作经验者优先。<br>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </div>
+</div>
+   
+   
+   
+  <div class="footer-content">
+    <div id="sitemap">
+      <div class="inner clearfix">
+        <p id="toTop"><a href="#topOfPage"><img src="${ctx}/img/common/btn_to_top_off.png" alt="PAGE UP"></a></p>
+        <ul class="link">
+          <li>
+                  <a href="${ctx}/cncrowd">
+                    中筹网金
+                  </a>
+                </li>
+                <li>
+                  <a href="#footer">
+                    联系我们
+                  </a>
+                </li>
+                <li>
+                  <a href="${ctx}/howto">
+                    投资教室
+                  </a>
+                </li>
+                <li>
+                  <a href="${ctx}/reg">
+                    注册账户
+                  </a>
+                </li>
+                <li>
+                  <a href="${ctx}/items">
+                    投资项目
+                  </a>
+                </li>
+                <li>
+                  <a href="${ctx}/faq">
+                    常见问题(Q&amp;A)
+                  </a>
+                </li>
+                <li>
+                  <a href="${ctx}/company?id=1">
+                    企业介绍
+                  </a>
+                </li>
+                <li>
+                  <a href="${ctx}/company?id=5">
+                    法律协议
+                  </a>
+                </li>
+        </ul>
+      </div>
+    </div>
+    <!-- end sitemap -->
+  </div>
+
+  <%@ include file="../common/footer.jsp" %>
+  <script src="${ctx}/js/common.js" type="text/javascript"></script>
+  <script src="${ctx}/js/top.js" type="text/javascript"></script>
+  <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+</body>
+</html>

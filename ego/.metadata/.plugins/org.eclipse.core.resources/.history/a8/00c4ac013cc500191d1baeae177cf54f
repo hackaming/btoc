@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ include file="common/base.jsp" %>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content=""> 
+  <meta name="keywords" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:locale" content="zh-CN">
+  <link href="${ctx}/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" href="${ctx}/css/reset.css" type="text/css">
+<link rel="stylesheet" href="${ctx}/css/common.css" type="text/css">
+<link rel="stylesheet" href="${ctx}/css/new.css" type="text/css">
+<link rel="stylesheet" href="${ctx}/css/top.css" type="text/css">
+<link rel="stylesheet" href="${ctx}/css/product.css" type="text/css">
+<link rel="stylesheet" href="${ctx}/css/products.css" type="text/css">
+<link rel="stylesheet" href="${ctx}/css/login.css" type="text/css">
+<link rel="stylesheet" href="${ctx}/css/style.css" type="text/css">
+<link rel="shortcut icon" href="${ctx}/img/favicon.png">
+<title>中筹网金</title>
+<script type="text/javascript" src="${ctx}/js/xxk.js"></script>
+<script type="text/javascript" src="${ctx}/js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" >
+$(document).ready(function() {
+	
+    $("#modifyPwd").click(function() {
+    	$("#usercenterForm").submit();
+    });
+    
+	<c:forEach items="${orderVoList}" var="orderVo" varStatus="p">
+		var cn = '${orderVo.projectVo.crowNumber}';// 众筹份数
+		var rcn = '${orderVo.projectVo.crowRealNumber}';// 众筹实际份数
+		var percentage = Math.floor((rcn / cn) * 100) + "%";
+		$("#b_bar_${p.index}").css('width', percentage);
+		$("#b_percentage_${p.index}").html(percentage);
+	</c:forEach>
+	
+	<c:forEach items="${favorerVoList}" var="favorerVo" varStatus="p">
+		var cn = '${favorerVo.projectVo.crowNumber}';// 众筹份数
+		var rcn = '${favorerVo.projectVo.crowRealNumber}';// 众筹实际份数
+		var percentage = Math.floor((rcn / cn) * 100) + "%";
+		$("#f_bar_${p.index}").css('width', percentage);
+		$("#f_percentage_${p.index}").html(percentage);
+	</c:forEach>
+});
+</script>
+</head>
+<body>
+  <div id="header">
+      <div class="inner clearfix">
+        <h1><a href="${ctx}/"><img alt="" src="${ctx}/img/header-logo.png"></a></h1>
+        <div class="header-right">
+          <div class="header-right-top clearfix">
+          
+ 		 <p class="header-money">
+              <span class="header-money-title">
+                                                        已筹资金累计
+              </span>
+              <br />
+              <span id="top_amount">
+               	 ￥ ---,---,---
+              </span>            
+            </p>
+            <p class="link">
+              <a target="_blank" href="#">
+                <img alt="weibo" src="${ctx}/img/ico-weibo.png">
+              </a>
+              <a target="_blank" href="#">
+                <img alt="weixin" src="${ctx}/img/ico-weixin.png">
+              </a>
+            </p>
+          </div>
+          <div class="header-right-mid">
+            <ul id="gnavi" class="clearfix">
+              <li>
+                <a href="${ctx}/cncrowd" onclick="ga('send', 'event', 'concept', 'click', 'header_nav', true);">
+                  <img src="${ctx}/img/common/gnavi01_off.png" alt="中筹网金">
+                </a>
+              </li>
+              <li>
+                <a href="${ctx}/howto" onclick="ga('send', 'event', 'start', 'click', 'header_nav', true);">
+                  <img src="${ctx}/img/common/gnavi02_off.png" alt="投资教室">
+                </a>
+              </li>
+              <li>
+                <a href="${ctx}/items" onclick="ga('send', 'event', 'products_lst', 'click', 'header_nav', true);">
+                  <img src="${ctx}/img/common/gnavi03_off.png" alt="投资项目">
+                </a>
+              </li>
+              <li>
+                <a href="${ctx}/transfer" onclick="ga('send', 'event', 'faq', 'click', 'header_nav', true);">
+                  <img src="${ctx}/img/common/gnavi04_off.png" alt="转让市场">
+                </a>
+              </li>
+              <li>
+                <a href="${ctx}/club" onclick="ga('send', 'event', 'seminar', 'click', 'header_nav', true);">
+                  <img src="${ctx}/img/common/gnavi05_off.png" alt="中筹会">
+                </a>
+              </li>
+              <li>
+                <a href="${ctx}/company" onclick="ga('send', 'event', 'company', 'click', 'header_nav', true);">
+                  <img src="${ctx}/img/common/gnavi06_off.png" alt="企业介绍">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <% 
+          	Object s = (Object)session.getAttribute("user");
+          	pageContext.setAttribute("s", s);
+          %>
+					
+          <div class="header-right-btm clearfix" style=" <c:if test="${s==null}"> display:none;  </c:if>"  >
+            <ul id="gnavi02" class="clearfix">
+              <li>
+                <a href="center" rel="nofollow" onclick="ga('send', 'event', 'account', 'click', 'header_nav', true);">
+                  <img src="${ctx}/img/common/label_user.png" alt="用户中心">         
+                </a>
+              </li>
+              <li>
+                <a href="logout" rel="nofollow" onclick="ga('send', 'event', 'mypage', 'click', 'header_nav', true);">
+                  <img src="${ctx}/img/common/label_exit.png" alt="退出">
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="header-right-btm clearfix" style=" <c:if test="${s!=null}"> display:none;  </c:if>" >
+            <ul id="gnavi02" class="clearfix">
+              <li>
+                <a href="login" rel="nofollow" onclick="ga('send', 'event', 'account', 'click', 'header_nav', true);">
+                  <img src="${ctx}/img/common/gnavi07_on.png" alt="登录账户">
+                </a>
+              </li>
+              <li>
+                <a href="reg" rel="nofollow" onclick="ga('send', 'event', 'mypage', 'click', 'header_nav', true);">
+                  <img src="${ctx}/img/common/gnavi09_off.png" alt="注册账户">
+                </a>
+              </li>
+            </ul>
+          </div>          
+        </div>
+      </div>
+    </div>
+  
+  <div class="topic-path">
+  <div class="inner clearfix">
+    <div class="topics-text">
+      <p><a href="/">首页</a> &gt; 用户中心</p>
+    </div>
+  </div>
+</div>
+
+<div class="centerPanel">
+  
+  <div class="mainRoundBox w1000">
+  	<div class="leftNav">
+  	 <h2 class="nav_title wyjiechu">我的中筹</h2>
+	  <ul class="lnavUl">
+	  	<li><a href="center" class="navItem currItem">我的账户</a></li>
+		<li><a href="invest" class="navItem">投资列表</a></li>
+		<li><a href="paiedorder" class="navItem">已经支付的投资项目</a></li>
+		<li><a href="notpaiedorder" class="navItem">尚未支付的投资项目</a></li> 
+	  </ul>
+	  <h2 class="nav_title zjguanli">资金管理</h2>
+	  <ul class="lnavUl">
+	  	<li><a href="recharge" class="navItem">充值</a></li>
+		<li><a href="cash" class="navItem ">提现</a></li>
+		<li><a href="bankCard" class="navItem">银行卡</a></li>
+		<li><a href="fund" class="navItem">资金记录</a></li>
+	  </ul>
+	  <h2 class="nav_title jbshezhi">基本设置</h2>
+	  <ul class="lnavUl"> 
+        <li><a href="auth" class="navItem">用户认证</a></li>
+		<li><a href="tel" class="navItem">修改手机</a></li>
+		<li><a href="modifyUser" class="navItem">修改资料</a></li>
+		<li><a href="modifyPwd" class="navItem">修改密码</a></li>
+		
+	  </ul>
+	  
+	  
+	</div>
+    <div class="rightMain">
+      <div class="contentMain dashedLineBot">
+        <!-- 个人信息 start -->
+        
+        
+        
+        <ul class="personBorrowData">
+          <li>
+            <label style="float:left" class="nameBold">您好~！${user.userName }</label>　　
+            
+        
+            <span style=" float:left; margin-left:20px">
+              <a href="#" class="autIcon aut_identity"></a>
+              <a href="#" class="autIcon aut_phone ml5"></a>
+              <a href="#" class="autIcon aut_email ml5"></a></span>
+              <!--<a href="#" class="autIcon aut_bankcard ml5"></a>
+              <a href="#" class="autIcon aut_tpassword ml5"></a>
+              <a href="#" class="autIcon aut_question ml5"></a>-->
+           </li>
+           
+           <li > &nbsp;
+          </li>
+           
+          <li>
+            账户余额<span class="f18 ml10 fcbt">￥${empty user.account.balance ? "0.00" : user.account.balance}</span>
+          </li>
+          <li>
+            冻结余额<span class="f18 ml10 fcbt">￥${empty user.account.freeze ? "0.00" : user.account.freeze}</span>
+          </li>
+          <li>
+            可用余额<span class="f18 ml10 fcbt">￥${empty user.account.available ? "0.00" : user.account.available}</span>
+          </li>
+          
+          <li ><label class="fl">安全等级</label>
+            <!-- <div class="safety">
+                <span class="save_grade1"></span>
+                <span class="save_grade2"></span>
+                <span class="save_grade3"></span>
+              </div> -->
+              <div class="safety" style="margin:12px 0 0 10px;">
+                <span class="save_grade1 bgred"></span>
+                <span class="save_grade2 bgorange"></span>
+                <span class="save_grade3 bggreen"></span>
+              </div>
+              <a href="#" class="fl fcbt ml10">提升</a>
+           </li>
+          
+        </ul>
+        
+        
+        <div class="incomePanel  ml10">
+          <p class="intop">
+            <span class="title">预计收益</span>
+            <span>1000.00</span>
+          </p>
+          <p class="inbottom">
+            
+            <span >历史收益：<b class="fcot ml10">754.00</b>&nbsp;元</span>
+            <span class="mt15">待收金额：<b class="fcot ml10">2354.00</b>&nbsp;元</span>
+           
+          </p>
+        </div>       
+      </div>
+      <!-- 个人信息 end -->
+     
+     <div class=" tab">
+          <div id="Tab3">
+            <div class="Menubox3" style="width:690px">
+              <ul>
+                <li id="three1" onclick="setTab('three',1,2)"  class="hover">认购的项目</li>
+                <li id="three2" onclick="setTab('three',2,2)">喜欢的项目</li>
+              </ul>
+            </div>
+            <div class="Contentbox3">
+			<div id="con_three_1" class="hover">
+			<ul class="borrowUl">
+			<c:forEach items="${orderVoList }" var="orderVo" varStatus="p">
+				<li>
+					<div class="headphoto ">
+						<img src="${ctx}/images/index_40x.jpg" />
+					</div>
+					<div class=" bor_con">
+						<p class="bor_title">
+							<span class="ditem_t">${orderVo.projectVo.projTitle} 投资期限：${orderVo.projectVo.crowDataline}个月</span>
+						</p>
+						<p class="bor_data">
+							<span class="ditem">已募集金额：￥${orderVo.projectVo.nowAmt}</span> <span
+								class="ditem">募集目标金额：￥${orderVo.projectVo.crowAmount}</span> <span class="ditem">年利率：${orderVo.projectVo.projProceeds}%</span>
+							<span class="ditem">我的份额：${orderVo.crowdCount}份</span> <span class="pditem">借款期限：${orderVo.projectVo.crowDataline}个月</span>
+						</p>
+						<a class="btn_status bid" onclick="buyBtn('${orderVo.projectVo.uuid}')">追加认购</a>
+						<a class="btn_status bid" onclick="buyBtn('${orderVo.projectVo.uuid}')">转让</a>
+						<div class="clear"></div>
+						<div class="progress" style="margin-left: 12px; width: 95%;">
+								<div id="b_bar_${p.index}" class="bar"></div>
+								<div class="data">
+									<b id="b_percentage_${p.index}"></b> FUNDED
+								</div>
+							</div>
+						</div>
+					</li>
+				</c:forEach>
+				</ul>
+			</div>
+			<div id="con_three_2" style="display:none">
+				<ul class="borrowUl">
+				<c:forEach items="${favorerVoList}" var="favorerVo" varStatus="p">
+					<li>
+						<div class="headphoto ">
+							<img src="${ctx}/images/index_40x.jpg" />
+						</div>
+						<div class=" bor_con">
+							<p class="bor_title">
+								<span class="ditem_t">${favorerVo.projectVo.projTitle} 投资期限：${favorerVo.projectVo.crowDataline}个月</span>
+								<!--<img src="images/bao.png" />
+								<img src="images/di.png" />-->
+							</p>
+							<p class="bor_data">
+								<span class="ditem">已募集金额：￥${favorerVo.projectVo.nowAmt}</span>
+								<span class="ditem">募集目标金额：￥${favorerVo.projectVo.crowAmount}</span>
+								<span class="ditem">年利率：${favorerVo.projectVo.projProceeds}%</span>
+								<span class="ditem">我的份额：0 份</span>
+								<span class="pditem">借款期限：${favorerVo.projectVo.crowDataline}个月</span>
+							</p>
+							<a class="btn_status bid" onclick="buyBtn('${favorerVo.projectVo.uuid}')">我要认购</a>
+							<div class="clear"></div>
+							<div class="progress" style="margin-left: 12px; width: 95%;">
+								<div id="f_bar_${p.index}" class="bar"></div>
+								<div class="data">
+									<b id="f_percentage_${p.index}"></b> FUNDED
+								</div>
+							</div>
+						</div>
+					</li>
+					</c:forEach>
+				</ul>
+			</div>
+            </div> 
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="clear"></div>
+<%@ include file="common/footer.jsp" %>
+<script type="text/javascript">
+function buyBtn(projUuid) {
+	location.href = contextPath + "/items/" + projUuid;
+};
+</script>
+</body>
+</html>

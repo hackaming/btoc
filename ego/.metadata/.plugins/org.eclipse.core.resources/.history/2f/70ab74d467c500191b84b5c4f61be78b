@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.ego.commons.pojo;
+
+/**
+ * @author XYan
+ *
+ */
+public class EasyUIDataGrid {
+
+}

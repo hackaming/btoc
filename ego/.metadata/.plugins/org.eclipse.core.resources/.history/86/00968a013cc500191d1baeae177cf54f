@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>合信生利</title>
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/xxk.js"></script>
+</head>
+<body>
+<div id="wrap">
+  <div id="header">
+    <div class="money">
+      <h2>累计融资金额:</h2>
+      <p>32,400,000</p>
+    </div>
+    <div class="wx">
+      <p>合信生利微信</p>
+    </div>
+    <div class="menu"> <a href="#"><img src="images/index_52.jpg" width="91" height="47" /></a><a href="#"><img src="images/index_53.jpg" width="109" height="47" /></a><a href="#"><img src="images/index_54.jpg" width="92" height="47" /></a><a href="#"><img src="images/index_55.jpg" width="96" height="47" /></a><a href="#"><img src="images/index_56.jpg" width="132" height="47" /></a><a href="#"><img src="images/index_57.jpg" width="97" height="47" /></a></div>
+    <div class="login"><a href="#" class="red">>登录</a><a href="#" class="red">>注册</a><a href="#" class="red">>企业入口</a></div>
+  </div>
+  <div id="content">
+    <div class="answer">
+      <div class="search">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="20"></td>
+            <td width="120"><h2>您的问题</h2></td>
+            <td width="225" valign="middle"><input name="" type="text" /></td>
+            <td width="85" valign="middle"><img src="images/main_06.jpg" width="75" height="27" /></td>
+            <td width="102" valign="middle"><img src="images/main_05.jpg" width="102" height="27" /></td>
+            <td align="right" valign="middle"><h3>常见问题：</h3></td>
+            <td valign="middle"><p>不良贷款继续扩大 银行有哪些方式处置坏账</p></td>
+          </tr>
+        </table>
+      </div>
+      <div class="lef fl">
+      <div class="box">
+        <div class="askfor">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td colspan="2">请留下您的问题：</td>
+    <td width="194" align="right"><span>最多可填写50字</span></td>
+  </tr>
+  <tr>
+    <td colspan="3">
+      <textarea name="textarea" id="textarea" cols="45" rows="5">开发商：首创置业，首创置业是中国领先的房地产综合营运商。公司于2003年6月19日在香港联合交易所主板上市（股票代码HK2868），综合实力居国内领 先地位。首创置业以北京为基地，自成立以来在北京地区累计开发规模超过400万平方米，总投资超过300亿元。目前已进入全国四大区 域十三个城市，土地储备规模超过1000万平方米，拥有较高的市场知名度和品牌影响力。秉承”目标一致、遵从规则、学习创新”的企业文 化，追求卓越、开放透明的首创置业，以”创新生活，创造价值”的开发理念，为客户营造优质生活空间，为投资者创造稳定增长收益，为 社会和谐不断贡献。</textarea></td>
+    </tr>
+   <tr>
+    <td colspan="2">添加详细描述：</td>
+    <td align="right"><span>最多可填写50字</span></td>
+  </tr>
+   <tr>
+    <td colspan="3">
+      <textarea name="textarea" id="textarea" cols="45" rows="5">开发商：首创置业，首创置业是中国领先的房地产综合营运商。公司于2003年6月19日在香港联合交易所主板上市（股票代码HK2868），综合实力居国内领 先地位。首创置业以北京为基地，自成立以来在北京地区累计开发规模超过400万平方米，总投资超过300亿元。目前已进入全国四大区 域十三个城市，土地储备规模超过1000万平方米，拥有较高的市场知名度和品牌影响力。秉承”目标一致、遵从规则、学习创新”的企业文 化，追求卓越、开放透明的首创置业，以”创新生活，创造价值”的开发理念，为客户营造优质生活空间，为投资者创造稳定增长收益，为 社会和谐不断贡献。</textarea></td>
+    </tr>
+   <tr>
+     <td width="85" align="right">手机号码：</td>
+     <td width="481"><label for="textfield"></label>
+       <input class="input140" type="text" name="textfield" id="textfield" /></td>
+     <td>&nbsp;</td>
+   </tr>
+   <tr>
+     <td align="right">验证码：</td>
+     <td><input class="input60" type="text" name="textfield2" id="textfield2" />
+       <img src="images/yzm.jpg" width="89" height="30" /></td>
+     <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <td>&nbsp;</td>
+    <td height="40"><a href="#" class="affirm">提交</a></td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+        </div>
+        </div>
+      </div>
+      <div class="rig fr">
+        <div class="box classify">
+          <h3>问题分类</h3>
+          <div>
+            <h4>投资常识</h4>
+            <ul>
+              <li>常用知识</li>
+              <li>转让份额</li>
+              <li>投资期限</li>
+            </ul>
+            <h4>投资回报</h4>
+            <ul>
+              <li>预估收益</li>
+              <li>回报方式</li>
+              <li>升值空间</li>
+            </ul>
+            <h4>投资流程</h4>
+            <ul>
+              <li>投资问题</li>
+              <li>注册问题</li>
+            </ul>
+          </div>
+        </div>
+        <div class="banner1"><img src="images/main_03.jpg" width="244" height="206" /></div>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div class="link">
+      <div class="fd">
+        <ul>
+          <li><a href="#">公司介绍</a></li>
+          <li><a href="#">合信生利</a></li>
+          <li><a href="#">媒体报道</a></li>
+          <li><a href="#">团队介绍</a></li>
+          <li><a href="#">投资计算器</a></li>
+          <li><a href="#">招贤纳士</a></li>
+          <li><a href="#">联系我们</a></li>
+        </ul>
+        <ul>
+          <li class="khfw"><a href="#">客户服务</a></li>
+          <li class="gfwx"><a href="#">官方微信</a></li>
+          <li class="gfwb"><a href="#">官方微博</a></li>
+        </ul>
+      </div>
+      <div class="tel">
+        <h2>客服电话</h2>
+        <h3>4001234567</h3>
+        <b>9:00-21:00</b> </div>
+    </div>
+    <p>© 2014 合信生利 All rights reserved    合信生利信息科技有限公司   沪ICP证 145663号</p>
+  </div>
+</div>
+</body>
+</html>

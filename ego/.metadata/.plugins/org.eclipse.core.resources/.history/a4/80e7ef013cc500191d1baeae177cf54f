@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<html>
+<%@ include file="common/base.jsp" %>
+  <body>
+	<%@ include file="common/header.jsp" %>
+    <div id="visual">
+      <ul>
+        <li>
+          <img src="${ctx}/img/top/visual.png" alt="" class="visual">
+        </li>
+        <li>
+          <img src="${ctx}/img/top/visual.png" alt="" class="visual">
+        </li>
+        <li>
+          <img src="${ctx}/img/top/visual.png" alt="" class="visual">
+        </li>
+      </ul>
+      <div class="header-banner">
+        <div class="inner">
+          <div class="banner">
+            <a href="reg" rel="nofollow" onclick="ga('send', 'event', 'account', 'click', 'top_bnr_account', true);">
+              <img class="hover" src="${ctx}/img/top/header_banner2.png" alt="">
+            </a>
+            <a href="#" onclick="ga('send', 'event', 'crowdequity', 'click', 'top_bnr_crowdequity', true);">
+              <img class="hover" src="${ctx}/img/top/header_banner3.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $(document).ready(function() {
+          var height = $(window).height() - 187;
+          $('#visual').height(height);
+          var imgs = $('#visual img.visual');
+          imgs.each(function() {
+            var img = $(this);
+            img.height(height);
+            var li_width = img.parent().width();
+            var li_height = img.parent().height();
+            img.parent().width(li_width * height / li_height);
+            img.parent().height(height);
+          });
+
+          var loop = {
+            current_left: 0,
+            start: function ($target, speed) {
+              var that = this;
+
+              // set argument
+              this.$frame = $target.children('ul');
+              this.speed = speed || 10000;
+
+              // set property
+              this.$contents = this.$frame.children();
+              this.contentsWidth = this.$contents.width();
+              this.contentsLength = this.$contents.length;
+
+              // clone child
+              this.$contents.clone().appendTo(this.$frame);
+
+              // set frame width
+              this.$frame.width(this.contentsWidth * this.contentsLength * 2);
+
+              // call move
+              this.move();
+            },
+
+            pause: function(){
+              current_left = parseFloat(this.$frame.css('left'));
+              this.$frame.stop();
+            },
+
+            move: function () {
+              var that = this;
+
+              // slide frame
+              this.$frame.animate({ left: this.contentsWidth * -this.contentsLength }, {
+                duration: this.speed * this.contentsLength,
+                easing: 'linear',
+                complete: function () {
+                  that.$frame.css({ left: 0 });
+                  that.move();
+                }
+              });
+            }
+          };
+
+          var visual = $('#visual')
+          loop.start(visual, 20000);
+          visual.on('mouseover', function(){
+            loop.pause();
+          });
+          visual.on('mouseout', function(){
+            loop.move();
+          });
+        });
+    </script>
+    <div id="topics">
+      <p class="inner">
+        <img src="${ctx}/img/top/topics.png" alt="">
+        <a href="#" onclick="ga('send', 'event', 'news', 'click', 'topics', true);">
+        </a>
+      </p>
+    </div>
+    <div id="videos">
+      <ul>
+        <li class="video">
+          <a href="#video-modal1" data-toggle="modal">
+            <img src="${ctx}/img/top/video-bg.jpg" alt="">
+          </a>
+          <p class="title">
+            注册流程
+          </p>
+        </li>
+        <li class="video">
+          <a href="#video-modal2" data-toggle="modal">
+            <img src="${ctx}/img/top/video-bg.jpg" alt="">
+          </a>
+          <p class="title">
+            投资教室
+          </p>
+        </li>
+        <li class="video">
+          <a href="#video-modal3" data-toggle="modal">
+            <img src="${ctx}/img/top/video-bg.jpg" alt="">
+          </a>
+          <p class="title">
+            中筹网金
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div id="video-modal1" class="modal hide fade" tabindex="-1" role="dialog"
+    aria-labelledby="payLabel" aria-hidden="true">
+      <div class="modal-header red-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+          ×
+        </button>
+        <h3>
+          视频播放
+        </h3>
+      </div>
+      <div class="modal-body center-block">
+        <a href="${ctx}/flowplayer/video1.flv" style="display:block;width:500px;height:300px;" id="player1">
+        </a>
+        <script>
+          flowplayer("player1", "${ctx}/flowplayer/flowplayer-3.2.18.swf");
+        </script>
+
+      </div>
+      
+    </div>
+    
+    <div id="video-modal2" class="modal hide fade" tabindex="-1" role="dialog"
+    aria-labelledby="payLabel" aria-hidden="true">
+      <div class="modal-header red-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+          ×
+        </button>
+        <h3>
+          视频播放
+        </h3>
+      </div>
+      <div class="modal-body center-block">
+        <a href="${ctx}/flowplayer/video2.flv" style="display:block;width:500px;height:300px;" id="player2">
+        </a>
+        <script>
+          flowplayer("player2", "${ctx}/flowplayer/flowplayer-3.2.18.swf");
+        </script>
+
+      </div>
+      
+    </div>
+    
+    <div id="video-modal3" class="modal hide fade" tabindex="-1" role="dialog"
+    aria-labelledby="payLabel" aria-hidden="true">
+      <div class="modal-header red-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+          ×
+        </button>
+        <h3>
+          视频播放
+        </h3>
+      </div>
+      <div class="modal-body center-block">
+        <a href="${ctx}/flowplayer/video3.flv" style="display:block;width:500px;height:300px;" id="player3">
+        </a>
+        <script>
+          flowplayer("player3", "${ctx}/flowplayer/flowplayer-3.2.18.swf");
+        </script>
+
+      </div>
+      
+    </div>
+    <div id="main">
+      <div class="products-lst">
+      <c:forEach items="${projectVoList}" var="projectVo" varStatus="p">
+        <div class="product-box clearfix">
+          <div class="string">
+            <div class="additional-info clearfix">
+              <p class="sub-title">
+                ${projectVo.projName}
+              </p>
+              <p class="label-box">
+                <span class="label">
+                  <a role="button" data-toggle="modal" onclick="buyBtn('${projectVo.uuid}')">
+                   	 认购
+                  </a>
+                </span>
+                <span class="label">
+                	<a role="button" data-toggle="modal" onclick="favorerBtn('${projectVo.uuid}')">
+                    	点赞 
+                  	</a>
+                <input id="projUuid" type="hidden" value="${projectVo.uuid}" />                  
+                </span>
+              </p>
+            </div>
+            <h1 class="product-name">
+              <a href="${ctx}/items/${projectVo.uuid}">${projectVo.projTitle}</a>
+            </h1>
+            <div class="spec-box clearfix">
+              <div class="left">
+                <p>
+                 	 当前市值
+                </p>
+                <p class="emphasis">
+                   <span>￥</span>${projectVo.originalAmount}
+                </p>
+              </div>
+              <div class="left">
+                <p>
+                 	 折扣众筹金额
+                </p>
+                <p class="emphasis">
+                  <span>￥</span>${projectVo.crowAmount}
+                </p>
+              </div>
+              <div class="right">
+                <p>
+                  	最长持有期限
+                </p>
+                 <p class="emphasis">${projectVo.crowDataline}个月</p>
+              </div>
+            </div>
+            <div class="meter-wrap">
+              <div class="meter-value A00000086" style="width: 82%;" id="bar_${p.index}" >
+                <div class="meter-text">
+                 <span id="percentage_${p.index}"></span> FUNDED
+                </div>
+              </div>
+            </div>
+            <div class="summary">
+				<p>${projectVo.comments}</p>
+			</div>
+          </div>
+          <div class="image">
+            <a href="${ctx}/items/${projectVo.uuid}">
+              <img alt="Index 40" src="${projectVo.projPreImageUrl}" width="475" />
+            </a>
+            <div class="good-count">
+              <span id="p_${projectVo.uuid}">${projectVo.favorerCount}</span>人已赞
+            </div>
+            <div class="remaining">
+            	<div id="A00000086" class="remaining-day hasCountdown">剩余<span class="num">4</span>天<span class="num">1</span>时<span class="num">30</span>分<span class="num">40</span>秒</div>
+            </div>
+            <!-- <div class="new-arrival">
+            <img src="${ctx}/img/common/ic_new_arrival001.png" alt="新项目">
+            </div> -->
+          </div>
+        </div>
+        </c:forEach>
+        <div class="btn-box btn-single">
+          <p class="btn blue">
+            <a href="#" onclick="ga('send', 'event', 'products_lst', 'click', 'top_main_bottom', true);">
+              投资项目一览
+            </a>
+          </p>
+        </div>
+        <div id="pay" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="payLabel"
+        aria-hidden="true">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+              ×
+            </button>
+            <h3 id="payLabel">
+              确认支付
+            </h3>
+          </div>
+          <div class="modal-body">
+            <p>
+              认购项目：
+            </p>
+            <p>
+              总金额：
+            </p>
+            <p>
+              认购份额：
+            </p>
+            <p>
+              应付金：
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">
+              关闭
+            </button>
+            <button class="btn btn-primary">
+              确认支付
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- end main -->
+      <div class="footer-content">
+        <div id="sitemap">
+          <div class="inner clearfix">
+            <div class=" container">
+              <div class="subheader">
+                <div class="subheader_line">
+                </div>
+                <h2>
+                  投资决策小组
+                </h2>
+                <div class="subheader_line">
+                </div>
+              </div>
+              <div class="clear">
+              </div>
+              <div class="serv_icons">
+                <div class=" grid">
+                  <a href="#">
+                    <div class="serv_icon1">
+                    </div>
+                    <h3>
+                      龚刚
+                    </h3>
+                  </a>
+                  <h2>
+                    小组长
+                  </h2>
+                  <p>
+                    
+                  </p>
+                </div>
+                <div class="grid">
+                  <a href="#">
+                    <div class="serv_icon2">
+                    </div>
+                    <h3>
+                      周雪爽
+                    </h3>
+                  </a>
+                  <h2>
+                    法律
+                  </h2>
+                  <p>
+                    
+                  </p>
+                </div>
+                <div class="grid">
+                  <a href="#">
+                    <div class="serv_icon3">
+                    </div>
+                    <h3>
+                      谢猛虎
+                    </h3>
+                  </a>
+                  <h2>
+                    资管
+                  </h2>
+                  <p>
+                    
+                  </p>
+                </div>
+                <div class="grid">
+                  <a href="#">
+                    <div class="serv_icon4">
+                    </div>
+                    <h3>
+                      李明
+                    </h3>
+                  </a>
+                  <h2>
+                    评估
+                  </h2>
+                  <p>
+                    
+                  </p>
+                </div>
+                <div class="grid">
+                  <a href="#">
+                    <div class="serv_icon5">
+                    </div>
+                    <h3>
+                      唐振东
+                    </h3>
+                  </a>
+                  <h2>
+                    中介
+                  </h2>
+                  <p>
+                    
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="clear">
+            </div>
+            <!--添加内容 end-->
+          </div>
+        </div>
+        <!-- end sitemap -->
+      </div>
+</div>
+	<%@ include file="common/footer.jsp" %>
+	<script src="${ctx}/js/top.js" type="text/javascript">
+	</script>
+	<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+	</script>
+	<script type="text/javascript">
+	function favorerBtn(projUuid) {
+		var urlPath = contextPath + "/items/favorer/" + projUuid;
+		$.ajax({
+			type : 'POST',
+			url : urlPath,
+			dataType : 'json',
+			success : function(data) {
+				if(data.returnData == 0) {
+					var count = $("#p_"+projUuid+"").text();
+					console.log(++count);
+					$("#p_"+projUuid+"").text(count);
+				} else if(data.returnData == 1) {
+					alert("您已点过赞。");
+				} else if(data.returnData == 2) {
+					alert("请先登录。");
+				} else {
+					alert("点赞失败。");
+				}
+			},
+			error : function(XMLHttpRequest, textStatus, errorThrown) {
+				alert("点赞失败。");
+			}
+		});
+	};
+	
+	function buyBtn(projUuid) {
+		location.href = contextPath + "/items/" + projUuid;
+	};
+	
+	</script>
+  </body>
+</html>
