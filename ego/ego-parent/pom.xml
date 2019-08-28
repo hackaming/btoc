@@ -1,10 +1,11 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.ego</groupId>
-  <artifactId>ego-parent</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>pom</packaging>
-  	<properties>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.ego</groupId>
+	<artifactId>ego-parent</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<properties>
 		<servlet-version>3.0.1</servlet-version>
 		<jsp-version>2.2</jsp-version>
 		<jstl-version>1.2</jstl-version>
@@ -21,9 +22,19 @@
 		<zkClient-version>0.10</zkClient-version>
 		<tomcat-version>2.2</tomcat-version>
 		<pagehelper-version>4.1.6</pagehelper-version>
+		<commonsnet-version>3.6</commonsnet-version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
+			<!-- commens net, for file upload -->
+			<!-- https://mvnrepository.com/artifact/commons-net/commons-net -->
+			<dependency>
+				<groupId>commons-net</groupId>
+				<artifactId>commons-net</artifactId>
+				<version>${commonsnet-version}</version>
+			</dependency>
+
+
 			<!-- 分页插件 -->
 			<dependency>
 				<groupId>com.github.pagehelper</groupId>
