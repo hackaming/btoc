@@ -4,6 +4,7 @@ D:\java\btoc\ego\ego-parent\ego-service-impl\src\main\java\com\ego\mapper\TbCont
 D:\java\btoc\ego\ego-parent\ego-service-impl\src\main\java\com\ego\mapper\TbItemDescMapper.java
 D:\java\btoc\ego\ego-parent\ego-service-impl\src\main\java\com\ego\mapper\TbItemParamItemMapper.java
 D:\java\btoc\ego\ego-parent\ego-service-impl\src\main\java\com\ego\mapper\TbOrderShippingMapper.java
+D:\java\btoc\ego\ego-parent\ego-service-impl\src\main\java\com\ego\dubbo\service\impl\TbItemDescDubboServiceImpl.java
 D:\java\btoc\ego\ego-parent\ego-service-impl\src\main\java\com\ego\mapper\TbItemParamMapper.java
 D:\java\btoc\ego\ego-parent\ego-service-impl\src\main\java\com\ego\dubbo\service\impl\TbItemDubboServiceImpl.java
 D:\java\btoc\ego\ego-parent\ego-service-impl\src\main\java\com\ego\mapper\TbOrderItemMapper.java

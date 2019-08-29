@@ -8,6 +8,7 @@ import com.ego.commons.pojo.EgoResult;
 import com.ego.dubbo.service.TbItemDubboService;
 import com.ego.manage.service.TbItemService;
 import com.ego.pojo.TbItem;
+import com.ego.pojo.TbItemDesc;
 
 @Service
 public class TbItemServiceImpl implements TbItemService{
@@ -37,6 +38,22 @@ public class TbItemServiceImpl implements TbItemService{
 		} else {
 			return 0;
 		}
+	}
+
+	@Override
+	public boolean insTbItem(TbItem tbItem) {
+		int insTbItem = tbItemDubboServiceImpl.insTbItem(tbItem);
+		return insTbItem==1?true:false;
+	}
+
+	@Override
+	public boolean insTbItemTbItemDesc(TbItem tbItem, TbItemDesc tbItemDesc) {
+		try {
+			return tbItemDubboServiceImpl.insTbItemDesc(tbItem, tbItemDesc)==1?true:false;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return false;
 	}
 
 }
