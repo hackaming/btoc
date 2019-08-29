@@ -6,4 +6,5 @@ import com.ego.pojo.TbItemCat;
 
 public interface TbItemCatDubboService {
 	List<TbItemCat> getListById(long id);
+	TbItemCat getById(long id);
 }
