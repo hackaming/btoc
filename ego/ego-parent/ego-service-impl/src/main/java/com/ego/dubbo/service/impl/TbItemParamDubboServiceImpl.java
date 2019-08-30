@@ -30,4 +30,23 @@ public class TbItemParamDubboServiceImpl implements TbItemParamDubboService{
 		return grid;
 	}
 
+	@Override
+	public int delParams(String ids) throws Exception {
+		String[] idList = ids.split(",");
+		int index = 0;
+		for (String id:idList){
+			index += tbItemParamMapper.deleteByPrimaryKey(Long.parseLong(id));
+		}
+		if (index == idList.length){
+			return 1;
+		} else {
+			throw new Exception("ÅúÁ¿É¾³ýÊ§°Ü£¡");
+		}
+	}
+
+	@Override
+	public int delParam(String id) {
+		return tbItemParamMapper.deleteByPrimaryKey(Long.parseLong(id));
+	}
+
 }

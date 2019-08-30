@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.ego.commons.pojo.EasyUIDataGrid;
+import com.ego.commons.pojo.EgoResult;
 import com.ego.dubbo.service.TbItemCatDubboService;
 import com.ego.dubbo.service.TbItemDubboService;
 import com.ego.dubbo.service.TbItemParamDubboService;
@@ -42,6 +43,31 @@ public class TbItemParamServiceImpl implements TbItemParamService {
 		EasyUIDataGrid er = new EasyUIDataGrid();
 		er.setRows(itemParamChildList);
 		er.setTotal(itemParamChildList.size());
+		return er;
+	}
+
+	@Override
+	public EgoResult deleteParamById(String id) {
+		EgoResult er = new EgoResult();
+		int index =	tbItemParamDubboServiceImpl.delParam(id);
+		if (1 == index){
+			er.setStatus(200);
+		}
+		return er;
+	}
+
+	@Override
+	public EgoResult deleteParamByIds(String ids) {
+		EgoResult er = new EgoResult();
+		int index;
+		try {
+			index = tbItemParamDubboServiceImpl.delParams(ids);
+			er.setStatus(200);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			er.setData(e.getMessage()+"“Ï≥££°");
+		}
 		return er;
 	}
 

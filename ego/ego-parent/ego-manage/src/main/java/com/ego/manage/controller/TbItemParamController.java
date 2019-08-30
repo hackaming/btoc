@@ -21,4 +21,9 @@ public class TbItemParamController {
 	public EasyUIDataGrid list(int page,int rows){
 		return tbItemParamService.show(page, rows);
 	}
+	@RequestMapping("item/param/delete")
+	@ResponseBody
+	public EgoResult delete(String ids){
+		return tbItemParamService.deleteParamByIds(ids);
+	}
 }
