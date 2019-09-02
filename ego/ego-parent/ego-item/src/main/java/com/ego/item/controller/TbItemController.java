@@ -20,12 +20,20 @@ public class TbItemController {
 	 * @param callback
 	 * @return
 	 */
-	@RequestMapping("/rest/itemcat/all")
+	@RequestMapping("rest/itemcat/all")
 	@ResponseBody
 	public MappingJacksonValue showMenu(String callback){
 		MappingJacksonValue mjv = new MappingJacksonValue(tbItemCatServiceImpl.showCatMeu());
 		mjv.setJsonpFunction(callback);
 		return mjv;
 	}
-
+	
+	/**
+	 * Debug method....try to find out why above url does not work.
+	 */
+	@RequestMapping("rest/itemcat/all2222")
+	@ResponseBody
+	public void showMenu2222(){
+		System.out.print("Test");
+	}
 }
