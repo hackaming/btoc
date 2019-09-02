@@ -29,12 +29,12 @@ public class TbItemCatServiceImpl implements TbItemCatService{
 		for (TbItemCat cat:list){
 			if (cat.getIsParent()){
 				PortalMenuNode pmd = new PortalMenuNode();
-				pmd.setN("<a href='/products/"+cat.getId()+".html'>"+cat.getName()+"</a>");
 				pmd.setU("/products/"+cat.getId()+".html");
+				pmd.setN("<a href='/products/"+cat.getId()+".html'>"+cat.getName()+"</a>");
 				pmd.setI(getAllMenu(tbItemCatDubboServiceImpl.getListById(cat.getId())));
 				listNode.add(pmd);
 			} else {
-				listNode.add("/products/"+cat.getId()+".html"+cat.getName());
+				listNode.add("/products/"+cat.getId()+".html|"+cat.getName());
 			}
 		}
 		return listNode;

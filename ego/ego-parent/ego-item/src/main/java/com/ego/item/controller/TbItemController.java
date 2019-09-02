@@ -28,12 +28,4 @@ public class TbItemController {
 		return mjv;
 	}
 	
-	/**
-	 * Debug method....try to find out why above url does not work.
-	 */
-	@RequestMapping("rest/itemcat/all2222")
-	@ResponseBody
-	public void showMenu2222(){
-		System.out.print("Test");
-	}
 }
