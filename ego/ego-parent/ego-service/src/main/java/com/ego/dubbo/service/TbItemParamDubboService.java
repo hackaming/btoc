@@ -9,4 +9,6 @@ public interface TbItemParamDubboService {
 	EasyUIDataGrid show(int page,int rows);
 	int delParams(String ids) throws Exception;
 	int delParam(String id);
+	TbItemParam getTbItemParamByItemCatId(long id);
+	int insTbItemParam(TbItemParam tbItemParam);
 }

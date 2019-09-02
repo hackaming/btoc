@@ -15,6 +15,7 @@ import com.ego.manage.service.TbItemDescService;
 import com.ego.manage.service.TbItemService;
 import com.ego.pojo.TbItem;
 import com.ego.pojo.TbItemDesc;
+import com.ego.pojo.TbItemParamItem;
 
 @Controller
 public class TbItemController {
@@ -82,7 +83,7 @@ public class TbItemController {
 	}
 	@ResponseBody
 	@RequestMapping("item/save")
-	public EgoResult save(TbItem tbItem,String desc){
+	public EgoResult save(TbItem tbItem,String desc,String itemParams){
 
 		boolean binsTbItemDesc = false;
 		EgoResult er = new EgoResult();
@@ -92,13 +93,20 @@ public class TbItemController {
 		tbItem.setCreated(date);
 		tbItem.setUpdated(date);
 		tbItem.setStatus((byte)1);
+		
 		TbItemDesc insTbItemDesc = new TbItemDesc();
 		insTbItemDesc.setItemId(itemId);
 		insTbItemDesc.setCreated(date);
 		insTbItemDesc.setUpdated(date);
 		insTbItemDesc.setItemDesc(desc);
 		
-		binsTbItemDesc = tbItemServiceImpl.insTbItemTbItemDesc(tbItem, insTbItemDesc);
+		TbItemParamItem tbItemParamItem = new TbItemParamItem();
+		tbItemParamItem.setCreated(date);
+		tbItemParamItem.setUpdated(date);
+		tbItemParamItem.setParamData(itemParams);
+		tbItemParamItem.setItemId(itemId);
+		
+		binsTbItemDesc = tbItemServiceImpl.insTbItemTbItemDesc(tbItem, insTbItemDesc,tbItemParamItem);
 		if (binsTbItemDesc){
 			er.setStatus(200);
 		} else {

@@ -49,4 +49,20 @@ public class TbItemParamDubboServiceImpl implements TbItemParamDubboService{
 		return tbItemParamMapper.deleteByPrimaryKey(Long.parseLong(id));
 	}
 
+	@Override
+	public TbItemParam getTbItemParamByItemCatId(long id) {
+		TbItemParamExample example = new TbItemParamExample();
+		example.createCriteria().andItemCatIdEqualTo(id);
+		List<TbItemParam> list = tbItemParamMapper.selectByExampleWithBLOBs(example);
+		if (list !=null && list.size()>0){
+			return list.get(0);
+		}
+		return null;
+	}
+
+	@Override
+	public int insTbItemParam(TbItemParam tbItemParam) {
+		return tbItemParamMapper.insertSelective(tbItemParam);
+	}
+
 }

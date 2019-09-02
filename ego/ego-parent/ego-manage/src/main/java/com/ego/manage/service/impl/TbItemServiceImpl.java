@@ -9,6 +9,7 @@ import com.ego.dubbo.service.TbItemDubboService;
 import com.ego.manage.service.TbItemService;
 import com.ego.pojo.TbItem;
 import com.ego.pojo.TbItemDesc;
+import com.ego.pojo.TbItemParamItem;
 
 @Service
 public class TbItemServiceImpl implements TbItemService{
@@ -51,9 +52,9 @@ public class TbItemServiceImpl implements TbItemService{
 	}
 
 	@Override
-	public boolean insTbItemTbItemDesc(TbItem tbItem, TbItemDesc tbItemDesc) {
+	public boolean insTbItemTbItemDesc(TbItem tbItem, TbItemDesc tbItemDesc,TbItemParamItem tbItemParamItem) {
 		try {
-			return tbItemDubboServiceImpl.insTbItemDesc(tbItem, tbItemDesc)==1?true:false;
+			return tbItemDubboServiceImpl.insTbItemDesc(tbItem, tbItemDesc,tbItemParamItem)==1?true:false;
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

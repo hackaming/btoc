@@ -1,6 +1,7 @@
 package com.ego.manage.service.impl;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
@@ -37,7 +38,7 @@ public class TbItemParamServiceImpl implements TbItemParamService {
 			child.setItemCatId(item.getItemCatId());
 			child.setParamData(item.getParamData());
 			child.setUpdated(item.getUpdated());
-			child.setItemCatName(tbItemCatDubboService.getById(item.getId()).getName());
+			child.setItemCatName(tbItemCatDubboService.getById(item.getItemCatId()).getName());
 			itemParamChildList.add(child);
 		}
 		EasyUIDataGrid er = new EasyUIDataGrid();
@@ -68,6 +69,31 @@ public class TbItemParamServiceImpl implements TbItemParamService {
 			e.printStackTrace();
 			er.setData(e.getMessage()+"“Ï≥££°");
 		}
+		return er;
+	}
+
+	@Override
+	public EgoResult getTbItemParamByItemCatId(long id) {
+		EgoResult er = new EgoResult();
+		TbItemParam itemParam = tbItemParamDubboServiceImpl.getTbItemParamByItemCatId(id);
+		if (null != itemParam){
+			er.setData(itemParam);
+			er.setStatus(200);
+		}
+		return er;
+	}
+
+	@Override
+	public EgoResult insTbItemParam(TbItemParam tbItemParam, long itemCatId) {
+		Date date = new Date();
+		EgoResult er = new EgoResult();
+		tbItemParam.setCreated(date);
+		tbItemParam.setUpdated(date);
+		tbItemParam.setItemCatId(itemCatId);
+		int index = tbItemParamDubboServiceImpl.insTbItemParam(tbItemParam);
+		if (index == 1){
+			er.setStatus(200);
+		} 
 		return er;
 	}
 

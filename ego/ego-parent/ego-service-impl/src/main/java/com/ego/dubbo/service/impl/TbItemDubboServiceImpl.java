@@ -8,9 +8,11 @@ import com.ego.commons.pojo.EasyUIDataGrid;
 import com.ego.dubbo.service.TbItemDubboService;
 import com.ego.mapper.TbItemDescMapper;
 import com.ego.mapper.TbItemMapper;
+import com.ego.mapper.TbItemParamItemMapper;
 import com.ego.pojo.TbItem;
 import com.ego.pojo.TbItemDesc;
 import com.ego.pojo.TbItemExample;
+import com.ego.pojo.TbItemParamItem;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 
@@ -21,6 +23,9 @@ public class TbItemDubboServiceImpl implements TbItemDubboService{
 	
 	@Resource
 	private TbItemDescMapper tbItemDescMapperImpl;
+	
+	@Resource
+	private TbItemParamItemMapper tbItemParamItemMapperImpl;
 
 	@Override
 	public EasyUIDataGrid show(int page, int rows) {
@@ -46,16 +51,15 @@ public class TbItemDubboServiceImpl implements TbItemDubboService{
 	}
 
 	@Override
-	public int insTbItemDesc(TbItem tbitem, TbItemDesc tbItemDesc) throws Exception {
+	public int insTbItemDesc(TbItem tbitem, TbItemDesc tbItemDesc,TbItemParamItem tbItemParamItem) throws Exception {
 		int index = 0; 
 		index += tbItemMapper.insertSelective(tbitem);
-		index += tbItemDescMapperImpl.insertSelective(tbItemDesc); 
-		if (index == 2){
+		index += tbItemDescMapperImpl.insertSelective(tbItemDesc);
+		index += tbItemParamItemMapperImpl.insertSelective(tbItemParamItem);
+		if (index == 3){
 			return 1;
 		} else {
 			throw new Exception("ÐÂÔöÊ§°Ü£¡");
 		}
-		
 	}
-
 }
