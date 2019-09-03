@@ -30,8 +30,8 @@
 	<dubbo:service interface="com.ego.dubbo.service.TbItemParamDubboService" ref="tbItemParamDubboServiceImpl"></dubbo:service>
 	<bean id="tbItemParamDubboServiceImpl" class="com.ego.dubbo.service.impl.TbItemParamDubboServiceImpl"></bean>
 	
-	<dubbo:service interface="com.ego.dubbo.service.TbContentCategoryService" ref="tbContentCategoryServiceImpl"></dubbo:service>
-	<bean id="tbContentCategoryServiceImpl" class="com.ego.dubbo.service.impl.TbContentCategoryServiceImpl"></bean>
+	<dubbo:service interface="com.ego.dubbo.service.TbContentCategoryDubboService" ref="tbContentCategoryDubboServiceImpl"></dubbo:service>
+	<bean id="tbContentCategoryDubboServiceImpl" class="com.ego.dubbo.service.impl.TbContentCategoryDubboServiceImpl"></bean>
 	
 	
 	<import resource="../../applicationContext.xml"/>

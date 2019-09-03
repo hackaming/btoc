@@ -22,5 +22,4 @@ public class TbContengCategoryController {
 	public List<EasyUiTree> list(@RequestParam(defaultValue="0")long id){
 		return tbContentCategoryServiceImpl.getContentCategoryEasyUiTreeList(id);
 	}
-
 }
