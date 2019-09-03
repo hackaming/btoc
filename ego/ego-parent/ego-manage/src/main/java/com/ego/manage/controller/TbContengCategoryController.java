@@ -10,7 +10,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.ego.commons.pojo.EasyUiTree;
+import com.ego.commons.pojo.EgoResult;
 import com.ego.manage.service.TbContentCategoryService;
+import com.ego.pojo.TbContentCategory;
 
 @Controller
 public class TbContengCategoryController {
@@ -21,5 +23,22 @@ public class TbContengCategoryController {
 	@ResponseBody
 	public List<EasyUiTree> list(@RequestParam(defaultValue="0")long id){
 		return tbContentCategoryServiceImpl.getContentCategoryEasyUiTreeList(id);
+	}
+	
+	@RequestMapping("content/category/create")
+	@ResponseBody
+	public EgoResult create(TbContentCategory cate){
+		return tbContentCategoryServiceImpl.insTbContentCategory(cate);
+	}
+	
+	@RequestMapping("/content/category/update")
+	@ResponseBody
+	public EgoResult update(TbContentCategory cate){
+		return tbContentCategoryServiceImpl.updateTbContentCategory(cate);
+	}
+	@RequestMapping("content/category/delete")
+	@ResponseBody
+	public EgoResult delete(TbContentCategory cate){
+		return tbContentCategoryServiceImpl.deleteTbContentCategory(cate);
 	}
 }

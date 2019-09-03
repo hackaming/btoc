@@ -8,5 +8,7 @@ import com.ego.pojo.TbContentCategory;
 
 public interface TbContentCategoryService {
 	List <EasyUiTree> getContentCategoryEasyUiTreeList(long id);
-	public EgoResult insTbContentCategory(TbContentCategory cate) throws Exception;
+	public EgoResult insTbContentCategory(TbContentCategory cate);
+	public EgoResult updateTbContentCategory(TbContentCategory cate);
+	public EgoResult deleteTbContentCategory(TbContentCategory cate);
 }

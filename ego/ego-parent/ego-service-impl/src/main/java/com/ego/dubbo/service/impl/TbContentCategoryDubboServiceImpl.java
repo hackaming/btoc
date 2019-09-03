@@ -64,5 +64,9 @@ public class TbContentCategoryDubboServiceImpl implements TbContentCategoryDubbo
 		}
 		return cate;
 	}
+	@Override
+	public TbContentCategory selCategoryById(long id) {
+		return tbContentCategoryMapperImpl.selectByPrimaryKey(id);
+	}
 
 }

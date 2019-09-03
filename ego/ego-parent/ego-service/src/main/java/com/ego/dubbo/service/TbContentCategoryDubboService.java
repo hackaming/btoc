@@ -9,4 +9,5 @@ public interface TbContentCategoryDubboService {
 	int insTbContentCategory(TbContentCategory cate);
 	int updateTbContentCategory(TbContentCategory cate);
 	TbContentCategory insTbContentCategoryWithRollback(TbContentCategory cate) throws Exception;
+	TbContentCategory selCategoryById(long id);
 }
