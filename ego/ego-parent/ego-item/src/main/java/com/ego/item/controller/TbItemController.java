@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.ego.item.service.TbItemCatService;
 
 @Controller
-public class TbItemController {
+public class   {
 	
 	@Resource
 	private TbItemCatService tbItemCatServiceImpl;

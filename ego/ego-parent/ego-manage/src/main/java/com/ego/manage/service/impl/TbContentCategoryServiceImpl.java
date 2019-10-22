@@ -90,7 +90,7 @@ public class TbContentCategoryServiceImpl implements TbContentCategoryService{
 			indexUpdate = tbContentCategoryDubboServiceImpl.updateTbContentCategory(parent);
 			if (indexUpdate != 1){
 				return er; //Failure, no needs to set status to 200
-			}
+			} 
 		}
 		er.setStatus(200);
 		return er;

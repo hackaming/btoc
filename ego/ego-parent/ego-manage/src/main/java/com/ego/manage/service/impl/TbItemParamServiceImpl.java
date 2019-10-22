@@ -38,7 +38,7 @@ public class TbItemParamServiceImpl implements TbItemParamService {
 			child.setItemCatId(item.getItemCatId());
 			child.setParamData(item.getParamData());
 			child.setUpdated(item.getUpdated());
-			child.setItemCatName(tbItemCatDubboService.getById(item.getItemCatId()).getName());
+ 
 			itemParamChildList.add(child);
 		}
 		EasyUIDataGrid er = new EasyUIDataGrid();
