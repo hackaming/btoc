@@ -22,7 +22,7 @@
 		<zkClient-version>0.10</zkClient-version>
 		<tomcat-version>2.2</tomcat-version>
 		<pagehelper-version>4.1.6</pagehelper-version>
-		<commonsnet-version>3.6</commonsnet-version>
+		<commonsnet-version>3.9.0</commonsnet-version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
